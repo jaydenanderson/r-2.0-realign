@@ -1,0 +1,1298 @@
+/*my riddles
+
+- all the !importants can and should be removed. i only have them there to beat the [data-v...] selector that is generated. i've tried using existing selectors, so removing the !importants should still work (there's probably a few places where this is not the case).
+- change all font-family values to: 'articulat cf', sans-serif !important
+- general size changes: body font size: 14px, button height: 48px, small button height: 36px. the scale everything should be based off is 12px.
+- font-weights: all 500 should go to 400, all bolder sizes should go to 700.
+- the rem values are based on 10 here instead of 12 like the homepage. changing that right now is probably an unneeded breaking change. i've tried to adjust accordingly.*/
+
+/* change logo fill to: #8280F1
+<svg class="riddle-logo"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#8280F1"><g id="mark-dark"><path d="M47.5171569,19.0095238 L39.8036616,5.73333333 C38.8083719,4.03809524 36.6263906,3.44761905 34.9037737,4.43809524 L21.5439233,12.0952381 C19.8213065,13.0857143 19.2471009,15.2571429 20.2232504,16.952381 L27.9367457,30.2095238 C28.9320354,31.9047619 31.1140167,32.4952381 32.8366336,31.5047619 L46.196484,23.847619 C47.9191009,22.8761905 48.5124466,20.7047619 47.5171569,19.0095238 Z" id="Shape" opacity="0.7"></path><path d="M37.4382056,12.0190476 L26.5282991,1.21904762 C25.1310654,-0.171428571 22.8533832,-0.171428571 21.4561495,1.21904762 L10.546243,12.0190476 C9.14900935,13.4095238 9.14900935,15.6571429 10.546243,17.047619 L21.4561495,27.847619 C22.8533832,29.2380952 25.1310654,29.2380952 26.5282991,27.847619 L37.4382056,17.047619 C38.8354393,15.6571429 38.8354393,13.4095238 37.4382056,12.0190476 Z" id="Shape" opacity="0.5"></path><path d="M26.4708785,12.0761905 L13.111028,4.43809524 C11.3884112,3.46666667 9.20642991,4.03809524 8.21114019,5.73333333 L0.49764486,18.952381 C-0.49764486,20.647619 0.0957009346,22.8190476 1.81831776,23.8095238 L15.1781682,31.447619 C16.900785,32.4190476 19.0827664,31.847619 20.0780561,30.152381 L27.7915514,16.9333333 C28.7677009,15.2190476 28.1934953,13.047619 26.4708785,12.0761905 Z" id="Shape" opacity="0.3"></path></g></g></g></svg>
+ */
+
+@import url("https://use.typekit.net/iwz2cpm.css");
+
+body {
+  background: #E6EDFB !important;
+  color: #272A31 !important;
+  font-family: 'articulat cf', sans-serif !important;
+  /*without this the gradient shadow on the navbar causes horizontal scrolling*/
+  overflow-x:  hidden !important;
+}
+
+.riddle-list-toolbar-wrapper .riddle-list-toolbar .riddle-type-filter .riddle-type-btn,
+.riddle-list-toolbar-wrapper .riddle-list-toolbar .filter-dropdown-btn {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  letter-spacing: .14em !important;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit !important;
+  font-weight: 700 !important;
+  letter-spacing: -.03em !important;
+}
+
+h1, .h1 {
+  font-size: 3.6rem;
+}
+
+h2, .h2 {
+  font-size: 2.8rem;
+}
+
+.btn {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  min-height: 4.8rem !important;
+  text-transform: uppercase !important;
+  padding: 1rem 1.8rem;
+}
+
+.btn.btn-sm {
+  font-weight: bold !important;
+  letter-spacing: .14em !important;
+  min-height: 3.6rem !important;
+  text-transform: uppercase !important;
+  padding: 1rem 1.2rem !important;
+}
+
+.btn.btn-icon {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.btn.btn-sm.btn-icon {
+  padding-left: .5rem !important;
+  padding-right: .5rem !important;
+}
+
+.btn + .btn {
+  margin-left: 1.8rem !important;
+}
+
+.dropdown-item {
+  padding: .6rem 1.2rem;
+}
+
+.card .card-body .card-head .card-title {
+  font-family: inherit !important;
+  font-weight: 700 !important;
+}
+
+.card .card-body .card-blocks, .card .card-body .card-date {
+  font-family: inherit !important;
+}
+
+.columns .card {
+  border-radius: .6rem !important;
+}
+
+.card .card-body .card-head .riddle-type,
+.card .card-body .card-head .riddle-status {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.card .image-wrapper {
+  border-radius: .6rem .6rem 0 0 !important;
+}
+
+.main-navbar {
+  background: #fff !important;
+  padding: 0 1.6rem !important;
+  position:  relative !important;
+  min-height: 7.2rem;
+}
+
+.main-navbar:after {
+  background: linear-gradient(90deg, #FFE9D9 10%, #DABDFE 45%, #BDF4FE 90%) !important;
+  border-radius: 1rem !important;
+  bottom: -5rem !important;
+  box-shadow: inset 0 -1rem 3rem 3rem #E6EDFB !important;
+  content: '' !important;
+  display: block !important;
+  height: 9rem !important;
+  left: -3rem !important;
+  opacity: 1 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  right: -3rem !important;
+  z-index: -1 !important;
+}
+
+.main-navbar .nav-item {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  letter-spacing: .14em !important;
+  padding: 0 1.2rem !important;
+  text-transform: uppercase !important;
+}
+
+.nav-item.megamenu {
+  font-weight: normal !important;
+  letter-spacing: 0 !important;
+  padding:  .5rem 1rem 0 !important;
+  text-transform: none !important;
+}
+
+.nav-item.megamenu h6 {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.megamenu .dropdown-toggle {
+  height: 3.6rem !important;
+  width: 3.6rem !important;
+  min-height: 3.6rem !important;
+}
+
+.dropdown-header {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.dropdown-menu {
+  border-radius: .6rem !important;
+}
+
+.dropdown .icon-toggle.dropdown-toggle {
+  height:  3.6rem !important;
+  min-height:  3.6rem !important;
+  width:  3.6rem !important;
+}
+
+.team-selector .btn {
+  color: #272A31 !important;
+  font-size: 1.2rem !important;
+  text-transform: uppercase !important;
+}
+
+.main-navbar .nav-item .nav-link {
+  border-radius: .6rem !important;
+  border: none !important;
+  color: #272A31 !important;
+  padding: .9rem 1.2rem !important;
+}
+
+.main-navbar .nav-item .nav-link.router-link-active {
+  background: #E0F5FB !important;
+  border: none !important;
+  color: #19d2f1 !important;
+}
+
+.megamenu .rid-icon {
+  color: #272A31 !important;
+}
+
+.megamenu .riddle-links .nav-link,
+.megamenu .riddle-links .nav-link:hover,
+.megamenu .riddle-links .nav-link:active {
+  color: #8280F1 !important;
+}
+
+.megamenu .riddle-links .nav-link:hover {
+  opacity: .8 !important;
+}
+
+.megamenu .riddle-links .nav-link:active {
+  opacity: .7 !important;
+}
+
+.megamenu .nav-link:hover {
+  background: transparent !important;
+}
+
+.megamenu .riddle-links .nav-link.text-dark {
+  color: #272A31 !important;
+}
+
+.megamenu .btn.btn-sm {
+  padding-left: .6rem !important;
+  padding-right: .6rem !important;
+}
+
+.megamenu.nav-item .nav-link {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.card-col .card .card-body .card-title {
+  font-weight: bold !important;
+  letter-spacing: -.03em !important;
+}
+
+.card-col .card .card-body .card-button a,
+.card-col .card .card-body .card-button button {
+  color: #19d2f1 !important;
+}
+
+.card-col .card {
+  border-radius: .6rem !important;
+}
+
+/* Creator  */
+.creator-content {
+  height: calc(100vh - 7.2rem) !important;
+}
+
+.creator-edit-sheet-wrapper {
+  padding-top: 1.5rem !important;
+}
+
+.creator-edit-sheet {
+  border-radius: .6rem !important;
+}
+
+.sheet-content .star::before {
+  top: 1.4rem !important;
+}
+
+.section-header .title,
+.collapse-toggle {
+  font-family: inherit !important;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.creator-top-bar {
+  background: #fff !important;
+  height: 7.2rem !important;
+  position: relative !important;
+  box-shadow: 0 .6rem 2.4rem rgba(28,26,100,.15) !important;
+  z-index: 2 !important;
+}
+
+.creator-top-bar .back-link {
+  color: #272A31 !important;
+}
+
+.creator-tabs {
+  border: none !important;
+  margin: none !important;
+}
+
+.creator-tabs li {
+  align-items: center !important;
+  display: flex !important;
+  height:  7.2rem !important;
+  padding: 0 1.2rem !important;
+}
+
+.creator-tabs .creator-steps-tab {
+  border-radius: .6rem;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  height: auto !important;
+  letter-spacing: .14em !important;
+  line-height: 1em !important;
+  padding: 1.2rem !important;
+  text-transform: uppercase !important;
+}
+
+.creator-tabs .creator-steps-tab.router-link-active {
+  background: #E0F5FB !important;
+  border: none !important;
+  color: #19d2f1 !important;
+}
+
+.creator-tabs .creator-steps-tab::before {
+  display: none !important;
+}
+
+.creator-top-bar .creator-title .btn {
+  color: #272A31 !important;
+  font-family: inherit !important;
+  line-height: 1.2em !important;
+  min-height: 0 !important;
+  padding: .4rem 3rem .4rem .4rem !important;
+}
+
+.creator-top-bar .creator-title .type-wrapper .badge {
+  background: transparent !important;
+  color: #272A31 !important;
+  font-family: inherit !important;
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
+  letter-spacing: .05em !important;
+  margin: 0 .4rem !important;
+  opacity: .7 !important;
+  padding: 0 !important;
+  text-transform: none !important;
+  margin-top: -.4rem !important;
+}
+
+.creator-title .rid-icon {
+  font-size: 1.6rem !important;
+}
+
+.profile-menu {
+  margin-left: 1.2rem !important;
+  margin-right: .6rem;
+}
+
+.profile-menu .profile-menu-btn {
+  width: 4.8rem;
+  height: 4.8rem;
+  line-height: 4.8rem;
+}
+
+.profile-menu-btn-text {
+  width: 3.6rem !important;
+  height: 3.6rem !important;
+  line-height: 3.6rem !important;
+}
+
+.full-width-layout .toolbar,
+.full-width-layout .side-panel {
+  margin-top: 1.5rem !important;
+  height: calc(100% - 1.5rem) !important;
+}
+
+.full-width-layout .toolbar {
+  border-radius: .6rem 0 0 .6rem !important;
+}
+
+.full-width-layout .side-panel {
+  border-radius: 0 .6rem .6rem 0 !important;
+}
+
+.btn-add-block {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+  padding: .6rem .8rem !important;
+  line-height: 1em !important;
+  border-radius: .6rem !important;
+}
+
+.btn-add-block .rid-icon {
+  margin-top: 0 !important;
+}
+
+.btn-add-block span {
+  display: block !important;
+  margin-top: 2px !important;
+  align-self: center !important;
+}
+
+.btn.options-toggle {
+  color:  #272A31 !important;
+  padding: 0 !important;
+  width: 3.6rem !important;
+  height: 3.6rem !important;
+  min-height: 3.6rem !important;
+  justify-content: center !important;
+}
+
+.cover:before {
+  border-radius: .5rem .5rem 0 0 !important;
+}
+
+.block-card {
+  border-radius: .6rem !important;
+}
+
+.block-card .card-content {
+  font-family: inherit !important;
+  font-size: 1.4rem !important;
+  padding-top: 0 !important;
+}
+
+.block-card .block-card-header .id-text {
+  font-family: inherit !important;
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  margin-left: 1rem !important;
+  opacity: .7 !important;
+  text-transform: uppercase !important;
+}
+
+.block-card .block-card-header .card-actions .dropdown-toggle,
+.dropdown-toggle.only-icon {
+  min-height: 0 !important;
+}
+
+.block-card-header {
+  padding: .5rem !important;
+  margin: 0 !important;
+}
+
+.form-control {
+  font-family: inherit !important;
+  border-radius: .6rem !important;
+  padding: 1.2rem 1.8rem;
+}
+
+@media (min-width: 1200px) {
+  .form-control {
+    font-size: 1.4rem !important;
+  }
+}
+
+.form-control-sm {
+  min-height: 3.6rem !important;
+  font-size: 1.4rem !important;
+  letter-spacing: .05em !important;
+  padding: .6rem 1.2rem !important;
+}
+
+@media (min-width: 1200px) {
+  .form-control-sm {
+    font-size: 1.4rem !important;
+  }
+}
+
+.block-editor .block-editor-label,
+.rid-text-box label,
+.content-field .field-label,
+.rid-textbox label {
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+}
+
+.rid-textbox label p {
+  margin: 0;
+}
+
+.content-col .creator-edit-sheet-wrapper .creator-edit-sheet .sheet-header {
+  font-family: inherit !important;
+}
+
+.content-col .creator-edit-sheet-wrapper .creator-edit-sheet .sheet-header p {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+  color: rgba(39,42,49,.5) !important;
+}
+
+.centered-layout-nav-header {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.centered-layout-nav-link {
+  font-weight: 700 !important;
+}
+
+.analyze-navbar .download-button {
+  background: transparent !important;
+}
+
+.block-add-popup .col-list h5 {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.block-add-popup h6 {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.personality-top-row .answer-tag {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.options-col .options {
+  margin-top: 1.5rem !important;
+}
+
+.settings-field .field-header .field-label {
+  font-size: 1.4rem !important;
+  padding-top: .9rem;
+}
+
+.settings-field .field-header,
+.settings-field .field-header .rid-dropdown,
+.settings-field .field-header .rid-multiselect,
+.options-field .options-item .options-header {
+  font-family: inherit !important;
+  font-size: 1.4rem !important;
+  font-weight: 400 !important;
+}
+
+.settings-field .field-header {
+  padding: .5rem 1.6rem !important;
+  min-height: 4.8rem !important;
+}
+
+.media-picker-dialog-editor .options-field .options-item .options-header .editor .rid-text-box {
+  background: transparent !important;
+}
+
+.options-field .options-item .options-header .editor .rid-text-box .form-control {
+  padding: .6rem .7rem !important;
+}
+
+.modal-header {
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+}
+
+.k-input,
+.k-picker,
+.k-colorgradient,
+.k-coloreditor {
+  font-family: inherit !important;
+}
+
+.table tbody tr td, .table thead tr th {
+  font-family: inherit !important;
+}
+
+.items-editor .item-list-actions .btn {
+  font-weight: 700 !important;
+}
+
+.items-editor .item .item-actions .btn {
+  height:  3.6rem !important;
+  width:  3.6rem !important;
+  padding: 0 !important;
+}
+
+.rich-text-editor .toolbar {
+  margin-top: 0 !important;
+}
+
+.white-box .editor label {
+  font-family: inherit !important;
+}
+
+.answer-img .btn-add {
+  min-height: 3.6rem !important;
+  border-radius: .6rem;
+}
+
+.main-media.wide {
+  padding-top: 51%;
+}
+
+.personality-top-row .answer-img {
+  height: 3.6rem !important;
+}
+
+/*logic page*/
+.logic-side-panel .key {
+  font-size: 1rem !important;
+  letter-spacing: .14em !important;
+  font-family: inherit !important;
+  font-weight: bold;
+}
+
+.logic-side-panel .white-box .editor label {
+  letter-spacing: 0 !important;
+  color: inherit !important;
+  font-weight: 700 !important;
+}
+
+.riddle-logic .logic-wrapper .results-wrapper .divider-icon {
+  background: #E6EDFB !important;
+}
+
+.logic-block .top-bar .id, {
+  font-family: inherit !important;
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  margin-left: 1rem !important;
+  opacity: .7 !important;
+  text-transform: uppercase !important;
+}
+/*my riddles
+
+- all the !importants can and should be removed. i only have them there to beat the [data-v...] selector that is generated. i've tried using existing selectors, so removing the !importants should still work (there's probably a few places where this is not the case).
+- change all font-family values to: 'articulat cf', sans-serif !important
+- general size changes: body font size: 14px, button height: 48px, small button height: 36px. the scale everything should be based off is 12px.
+- the rem values are based on 10 here instead of 12 like the homepage. changing that right now is probably an unneeded breaking change. i've tried to adjust accordingly.*/
+
+/* change logo fill to: #8280F1
+<svg class="riddle-logo"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#8280F1"><g id="mark-dark"><path d="M47.5171569,19.0095238 L39.8036616,5.73333333 C38.8083719,4.03809524 36.6263906,3.44761905 34.9037737,4.43809524 L21.5439233,12.0952381 C19.8213065,13.0857143 19.2471009,15.2571429 20.2232504,16.952381 L27.9367457,30.2095238 C28.9320354,31.9047619 31.1140167,32.4952381 32.8366336,31.5047619 L46.196484,23.847619 C47.9191009,22.8761905 48.5124466,20.7047619 47.5171569,19.0095238 Z" id="Shape" opacity="0.7"></path><path d="M37.4382056,12.0190476 L26.5282991,1.21904762 C25.1310654,-0.171428571 22.8533832,-0.171428571 21.4561495,1.21904762 L10.546243,12.0190476 C9.14900935,13.4095238 9.14900935,15.6571429 10.546243,17.047619 L21.4561495,27.847619 C22.8533832,29.2380952 25.1310654,29.2380952 26.5282991,27.847619 L37.4382056,17.047619 C38.8354393,15.6571429 38.8354393,13.4095238 37.4382056,12.0190476 Z" id="Shape" opacity="0.5"></path><path d="M26.4708785,12.0761905 L13.111028,4.43809524 C11.3884112,3.46666667 9.20642991,4.03809524 8.21114019,5.73333333 L0.49764486,18.952381 C-0.49764486,20.647619 0.0957009346,22.8190476 1.81831776,23.8095238 L15.1781682,31.447619 C16.900785,32.4190476 19.0827664,31.847619 20.0780561,30.152381 L27.7915514,16.9333333 C28.7677009,15.2190476 28.1934953,13.047619 26.4708785,12.0761905 Z" id="Shape" opacity="0.3"></path></g></g></g></svg>
+ */
+
+@import url("https://use.typekit.net/iwz2cpm.css");
+
+body {
+  background: #E6EDFB !important;
+  color: #272A31 !important;
+  font-family: 'articulat cf', sans-serif !important;
+  /*without this the gradient shadow on the navbar causes horizontal scrolling*/
+  overflow-x:  hidden !important;
+}
+
+.riddle-list-toolbar-wrapper .riddle-list-toolbar .riddle-type-filter .riddle-type-btn,
+.riddle-list-toolbar-wrapper .riddle-list-toolbar .filter-dropdown-btn {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  letter-spacing: .14em !important;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit !important;
+  font-weight: 700 !important;
+  letter-spacing: -.03em !important;
+}
+
+h1, .h1 {
+  font-size: 3.6rem;
+}
+
+h2, .h2 {
+  font-size: 2.8rem;
+}
+
+.btn {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  min-height: 4.8rem !important;
+  text-transform: uppercase !important;
+  padding: 1rem 1.8rem;
+}
+
+.btn.btn-sm {
+  font-weight: bold !important;
+  letter-spacing: .14em !important;
+  min-height: 3.6rem !important;
+  text-transform: uppercase !important;
+  padding: 1rem 1.2rem !important;
+}
+
+.btn.btn-icon {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.btn + .btn {
+  margin-left: 1.8rem !important;
+}
+
+.dropdown-item {
+  padding: .6rem 1.2rem;
+}
+
+.card .card-body .card-head .card-title {
+  font-family: inherit !important;
+  font-weight: 700 !important;
+}
+
+.card .card-body .card-blocks, .card .card-body .card-date {
+  font-family: inherit !important;
+}
+
+.columns .card {
+  border-radius: .6rem !important;
+}
+
+.card .card-body .card-head .riddle-type,
+.card .card-body .card-head .riddle-status {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.card .image-wrapper {
+  border-radius: .6rem .6rem 0 0 !important;
+}
+
+.main-navbar {
+  background: #fff !important;
+  padding: 0 1.6rem !important;
+  position:  relative !important;
+  min-height: 7.2rem;
+}
+
+.main-navbar:after {
+  background: linear-gradient(90deg, #FFE9D9 10%, #DABDFE 45%, #BDF4FE 90%) !important;
+  border-radius: 1rem !important;
+  bottom: -5rem !important;
+  box-shadow: inset 0 -1rem 3rem 3rem #E6EDFB !important;
+  content: '' !important;
+  display: block !important;
+  height: 9rem !important;
+  left: -3rem !important;
+  opacity: 1 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  right: -3rem !important;
+  z-index: -1 !important;
+}
+
+.main-navbar .nav-item {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  letter-spacing: .14em !important;
+  padding: 0 1.2rem !important;
+  text-transform: uppercase !important;
+}
+
+.nav-item.megamenu {
+  font-weight: normal !important;
+  letter-spacing: 0 !important;
+  padding:  .5rem 1rem 0 !important;
+  text-transform: none !important;
+}
+
+.nav-item.megamenu h6 {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.megamenu .dropdown-toggle {
+  height: 3.6rem !important;
+  width: 3.6rem !important;
+  min-height: 3.6rem !important;
+}
+
+.dropdown-header {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.dropdown-menu {
+  border-radius: .6rem !important;
+}
+
+.dropdown .icon-toggle.dropdown-toggle {
+  height:  3.6rem !important;
+  min-height:  3.6rem !important;
+  width:  3.6rem !important;
+}
+
+.team-selector .btn {
+  color: #272A31 !important;
+  font-size: 1.2rem !important;
+  text-transform: uppercase !important;
+}
+
+.main-navbar .nav-item .nav-link {
+  border-radius: .6rem !important;
+  border: none !important;
+  color: #272A31 !important;
+  padding: .9rem 1.2rem !important;
+}
+
+.main-navbar .nav-item .nav-link.router-link-active {
+  background: #E0F5FB !important;
+  border: none !important;
+  color: #19d2f1 !important;
+}
+
+.megamenu .rid-icon {
+  color: #272A31 !important;
+}
+
+.megamenu .riddle-links .nav-link,
+.megamenu .riddle-links .nav-link:hover,
+.megamenu .riddle-links .nav-link:active {
+  color: #8280F1 !important;
+}
+
+.megamenu .riddle-links .nav-link:hover {
+  opacity: .8 !important;
+}
+
+.megamenu .riddle-links .nav-link:active {
+  opacity: .7 !important;
+}
+
+.megamenu .nav-link:hover {
+  background: transparent !important;
+}
+
+.megamenu .riddle-links .nav-link.text-dark {
+  color: #272A31 !important;
+}
+
+.megamenu .btn.btn-sm {
+  padding-left: .6rem !important;
+  padding-right: .6rem !important;
+}
+
+.megamenu.nav-item .nav-link {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.card-col .card .card-body .card-title {
+  font-weight: bold !important;
+  letter-spacing: -.03em !important;
+}
+
+.card-col .card .card-body .card-button a,
+.card-col .card .card-body .card-button button {
+  color: #19d2f1 !important;
+}
+
+.card-col .card {
+  border-radius: .6rem !important;
+}
+
+/* Creator  */
+.creator-content {
+  height: calc(100vh - 7.2rem) !important;
+}
+
+.creator-edit-sheet-wrapper {
+  padding-top: 1.5rem !important;
+}
+
+.creator-edit-sheet {
+  border-radius: .6rem !important;
+}
+
+.sheet-content .star::before {
+  top: 1.4rem !important;
+}
+
+.section-header .title,
+.collapse-toggle {
+  font-family: inherit !important;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.creator-top-bar {
+  background: #fff !important;
+  height: 7.2rem !important;
+  position: relative !important;
+  box-shadow: 0 .6rem 2.4rem rgba(28,26,100,.15) !important;
+  z-index: 2 !important;
+}
+
+.creator-tabs {
+  border: none !important;
+  margin: none !important;
+}
+
+.creator-tabs li {
+  align-items: center !important;
+  display: flex !important;
+  height:  7.2rem !important;
+  padding: 0 1.2rem !important;
+}
+
+.creator-tabs .creator-steps-tab {
+  border-radius: .6rem;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  height: auto !important;
+  letter-spacing: .14em !important;
+  line-height: 1em !important;
+  padding: 1.2rem !important;
+  text-transform: uppercase !important;
+}
+
+.creator-tabs .creator-steps-tab.router-link-active {
+  background: #E0F5FB !important;
+  border: none !important;
+  color: #19d2f1 !important;
+}
+
+.creator-tabs .creator-steps-tab::before {
+  display: none !important;
+}
+
+.creator-top-bar .creator-title .btn {
+  color: #272A31 !important;
+  font-family: inherit !important;
+  line-height: 1.2em !important;
+  min-height: 0 !important;
+  padding: .4rem 3rem .4rem .4rem !important;
+}
+
+.creator-top-bar .creator-title .type-wrapper .badge {
+  background: transparent !important;
+  color: #272A31 !important;
+  font-family: inherit !important;
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
+  letter-spacing: .05em !important;
+  margin: 0 .4rem !important;
+  opacity: .7 !important;
+  padding: 0 !important;
+  text-transform: none !important;
+  margin-top: -.4rem !important;
+}
+
+.creator-title .rid-icon {
+  font-size: 1.6rem !important;
+}
+
+.profile-menu {
+  margin-left: 1.2rem !important;
+  margin-right: .6rem;
+}
+
+.profile-menu .profile-menu-btn {
+  width: 4.8rem;
+  height: 4.8rem;
+  line-height: 4.8rem;
+}
+
+.profile-menu-btn-text {
+  width: 3.6rem !important;
+  height: 3.6rem !important;
+  line-height: 3.6rem !important;
+}
+
+.full-width-layout .toolbar,
+.full-width-layout .side-panel {
+  margin-top: 1.5rem !important;
+  height: calc(100% - 1.5rem) !important;
+}
+
+.full-width-layout .toolbar {
+  border-radius: .6rem 0 0 .6rem !important;
+}
+
+.full-width-layout .side-panel {
+  border-radius: 0 .6rem .6rem 0 !important;
+}
+
+.btn-add-block {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+  padding: .6rem .8rem !important;
+  line-height: 1em !important;
+  border-radius: .6rem !important;
+}
+
+.btn-add-block .rid-icon {
+  margin-top: 0 !important;
+}
+
+.btn-add-block span {
+  display: block !important;
+  margin-top: 2px !important;
+  align-self: center !important;
+}
+
+.btn.options-toggle {
+  color:  #272A31 !important;
+  padding: 0 !important;
+  width: 3.6rem !important;
+  height: 3.6rem !important;
+  min-height: 3.6rem !important;
+  justify-content: center !important;
+}
+
+.cover:before {
+  border-radius: .5rem .5rem 0 0 !important;
+}
+
+.block-card {
+  border-radius: .6rem !important;
+}
+
+.block-card .card-content {
+  font-family: inherit !important;
+  font-size: 1.4rem !important;
+  padding-top: 0 !important;
+}
+
+.block-card .block-card-header .id-text {
+  font-family: inherit !important;
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  margin-left: 1rem !important;
+  opacity: .7 !important;
+  text-transform: uppercase !important;
+}
+
+.block-card .block-card-header .card-actions .dropdown-toggle,
+.dropdown-toggle.only-icon {
+  min-height: 0 !important;
+}
+
+.block-card-header {
+  padding: .5rem !important;
+  margin: 0 !important;
+}
+
+.form-control {
+  font-family: inherit !important;
+  border-radius: .6rem !important;
+  padding: 1.2rem 1.8rem;
+}
+
+@media (min-width: 1200px) {
+  .form-control {
+    font-size: 1.4rem !important;
+  }
+}
+
+.form-control-sm {
+  min-height: 3.6rem !important;
+  font-size: 1.4rem !important;
+  letter-spacing: .05em !important;
+  padding: .6rem 1.2rem !important;
+}
+
+@media (min-width: 1200px) {
+  .form-control-sm {
+    font-size: 1.4rem !important;
+  }
+}
+
+.block-editor .block-editor-label,
+.rid-text-box label,
+.content-field .field-label,
+.rid-textbox label {
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+}
+
+.rid-textbox label p {
+  margin: 0;
+}
+
+.content-col .creator-edit-sheet-wrapper .creator-edit-sheet .sheet-header {
+  font-family: inherit !important;
+}
+
+.content-col .creator-edit-sheet-wrapper .creator-edit-sheet .sheet-header p {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+  color: rgba(39,42,49,.5) !important;
+}
+
+.centered-layout-nav-header {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.centered-layout-nav-link {
+  font-weight: 700 !important;
+}
+
+.analyze-navbar .download-button {
+  background: transparent !important;
+}
+
+.block-add-popup .col-list h5 {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.block-add-popup h6 {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.personality-top-row .answer-tag {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+}
+
+.options-col .options {
+  margin-top: 1.5rem !important;
+}
+
+.settings-field .field-header .field-label {
+  font-size: 1.4rem !important;
+  padding-top: .9rem;
+}
+
+.settings-field .field-header,
+.settings-field .field-header .rid-dropdown,
+.settings-field .field-header .rid-multiselect,
+.options-field .options-item .options-header {
+  font-family: inherit !important;
+  font-size: 1.4rem !important;
+  font-weight: 400;
+}
+
+.settings-field .field-header {
+  padding: .5rem 1.6rem !important;
+  min-height: 4.8rem !important;
+}
+
+.media-picker-dialog-editor .options-field .options-item .options-header .editor .rid-text-box {
+  background: transparent !important;
+}
+
+.options-field .options-item .options-header .editor .rid-text-box .form-control {
+  padding: .6rem .7rem !important;
+}
+
+.modal-header {
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+}
+
+.k-input,
+.k-picker,
+.k-colorgradient,
+.k-coloreditor {
+  font-family: inherit !important;
+}
+
+.table tbody tr td, .table thead tr th {
+  font-family: inherit !important;
+}
+
+.items-editor .item-list-actions .btn {
+  font-weight: 700 !important;
+}
+
+.items-editor .item .item-actions .btn {
+  height:  3.6rem !important;
+  width:  3.6rem !important;
+  padding: 0 !important;
+}
+
+.rich-text-editor .toolbar {
+  margin-top: 0 !important;
+}
+
+.white-box .editor label {
+  font-family: inherit !important;
+}
+
+.answer-img .btn-add {
+  min-height: 3.6rem !important;
+  border-radius: .6rem;
+}
+
+.main-media.wide {
+  padding-top: 51%;
+}
+
+.personality-top-row .answer-img {
+  height: 3.6rem !important;
+}
+
+/*LOGIC PAGE*/
+.logic-side-panel .logic-editor {
+  font-family: inherit !important;
+}
+
+.logic-side-panel .white-box {
+  padding: 2.4rem !important;
+}
+
+.riddle-logic .logic-wrapper .results-wrapper .divider-icon {
+  background: #E6EDFB !important;
+}
+
+.logic-block .top-bar .id {
+  font-family: inherit !important;
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  margin-left: 1rem !important;
+  opacity: .7 !important;
+  text-transform: uppercase !important;
+}
+
+.logic-side-panel .logic-editor .editor-top {
+  font-family: inherit !important;
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  opacity: .7 !important;
+  text-transform: uppercase !important;
+  margin: 0 0 1.2rem !important;
+}
+
+.logic-block .logic-type {
+  font-family: inherit !important;
+  font-size: 1.2rem !important;
+}
+
+.score-value-wrapper {
+  border-radius: .6rem !important;
+  padding: 1.2rem 4rem 1.2rem 1.2rem !important;
+  height: 4.8rem !important;
+}
+
+.block-option-item .text {
+  font-family: inherit !important;
+}
+
+/*this is a new class because i didn't want to unintentionally destroy .rid-dropdown in other places*/
+.result-editor .rid-dropdown,
+.logic-side-panel .rid-dropdown {
+  border-radius: .6rem !important;
+  padding: 1.2rem 4rem 1.2rem 1.2rem !important;
+  height: 4.8rem !important;
+}
+/*also created*/
+.result-editor .rid-dropdown .rid-icon, 
+.logic-side-panel .rid-dropdown .rid-icon {
+  font-size: 1.8rem !important;
+}
+
+.rid-tab-strip .nav-tabs .nav-link {
+  font-size: 1.2rem !important;
+  height: 16px !important;
+  height: 4.8rem !important;
+  letter-spacing: .14rem !important;
+  line-height: 1.6rem !important;
+}
+
+.logic-block .logic-type {
+  font-family: inherit !important;
+  font-size: 1.2rem !important;
+}
+
+.score-value-wrapper {
+  border-radius: .6rem !important;
+  padding: 1.2rem 4rem 1.2rem 1.2rem !important;
+  height: 4.8rem !important;
+}
+
+.block-option-item .text {
+  font-family: inherit !important;
+}
+
+.logic-side-panel .how-to .collapse-toggle .rid-icon {
+  top: 1rem !important;
+}
+
+/*PALETTES*/
+.options-item .options-header {
+  min-height: 4.8rem !important;
+}
+.options-item .options-header,
+.options-item .options-header .rid-dropdown,
+.options-item .options-header .rid-multiselect,
+.options-item .options-header .rid-text-box .rid-input {
+  color:  inherit !important;
+  font-family: inherit !important;
+  font-size: 1.4rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+.options-item .options-header .options-label {
+  padding-top: .9rem !important;
+}

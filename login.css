@@ -1,0 +1,82 @@
+/*Log in page
+
+- swap header and footer out to match homepage
+- the rem values are based on 16 here instead of 12 like the homepage as changing it right now is probably an unneeded breaking change. the rem values used and the header and footer will have to be refactored because of this.*/
+
+@import url("https://use.typekit.net/iwz2cpm.css");
+
+body {
+  font-family: articulat-cf, sans-serif;
+  font-size: .875rem;
+  color: #272A31;
+}
+
+.btn {
+  font-family: articulat-cf, sans-serif;
+  border-radius: .375rem;
+}
+
+.jumbotron {
+  border-radius: .375rem;
+}
+
+.login input {
+  border-radius: .375rem;
+}
+
+.login .social-logins .btn-social {
+  border-radius: .375rem;
+}
+
+.login .form-col {
+  border-radius: .375rem 0 0 .375rem;
+}
+
+.gray-light-bg {
+  background: #E6EDFB;
+}
+
+a, a:hover {
+  color: #8280F1;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -.03em;
+}
+
+.login label,
+.login .login-features .label {
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.login .social-logins .btn-social img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.login .social-logins .btn-social span {
+  line-height: 3rem;
+}
+
+.login input {
+  padding: .9375rem 1.125rem;
+  height: auto;
+}
+
+.forgot-pw {
+  font-size: .875rem;
+}
+
+.btn-block {
+  /*remove the fixed inline height of 76px. we want a height of 48px.*/
+  padding: 14px;
+  font-size: 12px;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
