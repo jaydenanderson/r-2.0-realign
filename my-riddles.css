@@ -70,10 +70,40 @@ h2, .h2 {
   margin-left: 1.2rem !important;
 }
 
+.btn-primary {
+  box-shadow: none !important;
+}
+
+.rid-dropdown {
+  border-radius: .6rem !important;
+  padding: 1.2rem 4rem 1.2rem 1.2rem !important;
+  min-height: 4.8rem !important;
+  height: auto !important;
+}
+.rid-dropdown .rid-icon {
+  font-size: 1.8rem !important;
+}
+
 .dropdown-item {
   padding: .6rem 1.2rem;
 }
 
+.status-badge {
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+.alert {
+  border-radius: .6rem !important;
+}
+
+.tabs .tab {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  letter-spacing: .14em !important;
+  height: 4.8rem !important;
+  line-height: 4.8rem !important;
+}
 
 
 
@@ -277,6 +307,13 @@ h2, .h2 {
   z-index: 2 !important;
 }
 
+.modal-header .creator-top-bar {
+  box-shadow: none !important;
+  flex-grow: 100;
+  align-items: center;
+  display: flex;
+}
+
 .creator-tabs {
   border: none !important;
   margin: none !important;
@@ -300,7 +337,12 @@ h2, .h2 {
   text-transform: uppercase !important;
 }
 
-.creator-tabs .creator-steps-tab.router-link-active {
+.modal-header .creator-top-bar .creator-steps-tab {
+  margin: 0 1.2rem;
+}
+
+.creator-tabs .creator-steps-tab.router-link-active,
+.creator-tabs .creator-steps-tab.active {
   background: #E0F5FB !important;
   border: none !important;
   color: #19d2f1 !important;
@@ -333,7 +375,7 @@ h2, .h2 {
 }
 
 .creator-title .rid-icon {
-  font-size: 1.6rem !important;
+  font-size: 1.8rem !important;
 }
 
 .profile-menu {
@@ -397,6 +439,7 @@ h2, .h2 {
 }
 
 .cover:before {
+  letter-spacing: .14em !important;
   border-radius: .5rem .5rem 0 0 !important;
 }
 
@@ -469,8 +512,29 @@ h2, .h2 {
   margin: 0;
 }
 
+.section-header .info-popup,
+.add-button-wrapper .info-popup,
+.content-field .field-label .info-popup {
+  font-size: 1.8rem !important;
+  color: inherit !important;
+}
+
+.section-header .info-popup {
+  width: 1.8rem !important;
+  right: 1.6rem !important;
+}
+
+.content-col .creator-edit-sheet-wrapper .creator-edit-sheet .sheet-content {
+  padding: 1.2rem 2.4rem !important;
+}
+
 .content-col .creator-edit-sheet-wrapper .creator-edit-sheet .sheet-header {
   font-family: inherit !important;
+}
+
+.content-col .creator-edit-sheet-wrapper .creator-edit-sheet .options-toggle {
+  right: 2.4rem !important;
+  top: 1.8rem !important;
 }
 
 .content-col .creator-edit-sheet-wrapper .creator-edit-sheet .sheet-header p {
@@ -478,6 +542,17 @@ h2, .h2 {
   letter-spacing: .14em !important;
   text-transform: uppercase !important;
   color: rgba(39,42,49,.5) !important;
+}
+
+.personality-items-editor,
+.poll-items-editor,
+.quiz-items-editor {
+  margin: 0 !important;
+}
+
+.creator-edit-sheet .sheet-header {
+  padding: 1.2rem 2.4rem 0 2.4rem !important;
+  line-height: 4.8rem;
 }
 
 .centered-layout-nav-header {
@@ -506,7 +581,9 @@ h2, .h2 {
   text-transform: uppercase !important;
 }
 
-.personality-top-row .answer-tag {
+.personality-top-row .answer-tag,
+.quiz-top-row .answer-tag,
+.poll-top-row .answer-tag {
   font-size: 1.2rem !important;
   letter-spacing: .14em !important;
   text-transform: uppercase !important;
@@ -518,7 +595,12 @@ h2, .h2 {
 
 .settings-field .field-header .field-label {
   font-size: 1.4rem !important;
-  padding-top: .9rem !important;
+  padding-top: 1.4rem !important;
+  letter-spacing: 0 !important;
+}
+
+.settings-field .field-header .rid-text-box .rid-input {
+  font-weight: 400 !important;
   letter-spacing: 0 !important;
 }
 
@@ -530,10 +612,11 @@ h2, .h2 {
   font-size: 1.4rem !important;
   font-weight: 400 !important;
   letter-spacing: 0 !important;
+  border-radius: 0 !important;
 }
 
 .settings-field .field-header {
-  padding: .5rem 1.6rem !important;
+  padding: 0 1.6rem !important;
   min-height: 4.8rem !important;
 }
 
@@ -543,6 +626,10 @@ h2, .h2 {
 
 .options-field .options-item .options-header .editor .rid-text-box .form-control {
   padding: .6rem .7rem !important;
+}
+
+.options-field .label {
+  letter-spacing: 0 !important;
 }
 
 .modal-header {
@@ -641,11 +728,24 @@ h2, .h2 {
   padding-top: 51%;
 }
 
-.personality-top-row .answer-img {
+.personality-top-row .answer-img,
+.quiz-top-row .answer-img,
+.poll-top-row .answer-img {
   height: 3.6rem !important;
 }
 
 /*LOGIC PAGE*/
+.logic-actions {
+  margin-top: 2.4rem !important;
+}
+
+.logic-side-panel .key {
+  font-size: 1rem !important;
+  letter-spacing: .14em !important;
+  font-family: inherit !important;
+  font-weight: 700 !important;
+}
+
 .logic-side-panel .logic-editor {
   font-family: inherit !important;
 }
@@ -681,6 +781,11 @@ h2, .h2 {
   font-size: 1.2rem !important;
 }
 
+.logic-block .logic-type {
+  text-transform: uppercase !important;
+  letter-spacing: .14em !important;
+}
+
 .score-value-wrapper {
   border-radius: .6rem !important;
   padding: 1.2rem 4rem 1.2rem 1.2rem !important;
@@ -689,19 +794,6 @@ h2, .h2 {
 
 .block-option-item .text {
   font-family: inherit !important;
-}
-
-/*this is a new class because i didn't want to unintentionally destroy .rid-dropdown in other places*/
-.result-editor .rid-dropdown,
-.logic-side-panel .rid-dropdown {
-  border-radius: .6rem !important;
-  padding: 1.2rem 4rem 1.2rem 1.2rem !important;
-  height: 4.8rem !important;
-}
-/*also a new class*/
-.result-editor .rid-dropdown .rid-icon, 
-.logic-side-panel .rid-dropdown .rid-icon {
-  font-size: 1.8rem !important;
 }
 
 .rid-tab-strip .nav-tabs .nav-link {
@@ -735,6 +827,22 @@ h2, .h2 {
 
 
 
+/*SETTINGS*/
+.settings-field .field-header .rid-dropdown,
+.settings-field .field-header .rid-multiselect,
+.settings-field .field-header .field-label {
+  line-height: 1.8rem !important;
+}
+
+.design-side-panel .collapse-toggle,
+.design-side-panel .rid-dropdown {
+  border-radius: 0 !important;
+}
+
+
+
+
+
 /*PALETTES*/
 .options-item .options-header {
   min-height: 4.8rem !important;
@@ -753,6 +861,10 @@ h2, .h2 {
 .options-item .options-header .options-label {
   padding-top: .9rem !important;
 }
+.palette-item .palette-info .rid-radio .form-check-label {
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+}
 
 
 
@@ -761,3 +873,9 @@ h2, .h2 {
 .total-leads {
   font-weight: 700 !important;
 }
+
+/*OTHER NOTES
+
+- remove svg filter on the "more" options in the text editor (url(#filter-1)). it makes the icons look blurry.
+
+*/
