@@ -36,7 +36,7 @@ h2, .h2 {
 .btn {
   border-radius: .6rem !important;
   font-size: 1.2rem !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   min-height: 4.8rem !important;
   padding: 1rem 1.8rem;
   text-transform: uppercase !important;
@@ -44,7 +44,7 @@ h2, .h2 {
 
 .btn.btn-sm {
   font-weight: bold !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   min-height: 3.6rem !important;
   padding: 1rem 1.2rem !important;
   text-transform: uppercase !important;
@@ -114,7 +114,7 @@ h2, .h2 {
   font-size: 1.2rem !important;
   font-weight: bold !important;
   height: 4.8rem !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   line-height: 4.8rem !important;
 }
 
@@ -125,7 +125,8 @@ h2, .h2 {
 .riddle-list-toolbar-wrapper .riddle-list-toolbar .filter-dropdown-btn {
   font-size: 1.2rem !important;
   font-weight: bold !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
+  min-height: 2.4rem !important;
 }
 
 .riddle-list-toolbar-wrapper .riddle-list-toolbar .search-filter.open .search-btn, 
@@ -145,6 +146,18 @@ h2, .h2 {
   font-family: inherit !important;
 }
 
+.card {
+  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.2) !important;
+  border: none !important;
+}
+
+.card:active,
+.card:focus,
+.card:focus-within,
+.card:hover {
+  box-shadow: 0 1.2rem 2.4rem rgba(28,26,100,.3) !important;
+}
+
 .columns .card {
   border-radius: .6rem !important;
 }
@@ -152,7 +165,7 @@ h2, .h2 {
 .card .card-body .card-head .riddle-type,
 .card .card-body .card-head .riddle-status {
   font-size: 1.2rem !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   text-transform: uppercase !important;
 }
 
@@ -186,7 +199,7 @@ h2, .h2 {
 .main-navbar .nav-item {
   font-size: 1.2rem !important;
   font-weight: bold !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   padding: 0 1.2rem !important;
   text-transform: uppercase !important;
 }
@@ -202,7 +215,7 @@ h2, .h2 {
 .nav-item.megamenu label {
   font-size: 1.2rem !important;
   font-weight: bold !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   text-transform: uppercase !important;
 }
 
@@ -249,7 +262,7 @@ h2, .h2 {
 .dropdown-header {
   font-size: 1.2rem !important;
   font-weight: bold !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   text-transform: uppercase !important;
 }
 
@@ -329,7 +342,7 @@ move log out link under account instead of support. */
 
 .megamenu .rid-dropdown {
   font-size: 1.2rem !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   min-height: 3.6rem !important;
   padding: 0.2rem !important;
 }
@@ -403,7 +416,7 @@ move log out link under account instead of support. */
   font-family: inherit !important;
   font-size: 1.8rem !important;
   font-weight: 400 !important;
-  letter-spacing: 0 !important;
+  letter-spacing: .05em !important;
   text-transform: none !important;
   color: inherit !important;
 }
@@ -416,6 +429,14 @@ move log out link under account instead of support. */
   padding: 2.4rem 1.6rem !important;
 }
 
+.options-col .section-header .title {
+  padding: 2.4rem 1.6rem !important;
+}
+
+.section-header .title > .rid-icon {
+  margin: -8px 0 .6rem 0 !important;
+}
+
 .side-panel .collapse-toggle {
   display: flex !important;
   justify-content: space-between !important;
@@ -426,14 +447,31 @@ move log out link under account instead of support. */
   border-radius: 0 !important;
 }
 
+.side-panel .btn-primary {
+  justify-content: center !important;
+  margin-top: 1.6rem !important;
+  min-height: 3.6rem !important;
+  width: 100% !important;
+}
+
 .count-tag {
-  margin: -.4rem 0;
-  font-size: 1.2rem;
+  align-self: center !important;
+  background: rgba(39,42,49,.1) !important;
+  border-radius: 100px !important;
+  display: inline-block !important;
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  height: 1.8rem !important;
+  line-height: 1.8rem !important;
+  margin: 0 !important;
+  min-width: 3.6rem !important;
+  padding: 0 .6rem !important;
+  text-align: center !important;
 }
 
 .creator-top-bar {
   background: #fff !important;
-  box-shadow: 0 .2rem 1.2rem rgba(28,26,100,.15) !important;
+  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.2) !important;
   height: 7.2rem !important;
   position: relative !important;
   z-index: 2 !important;
@@ -467,7 +505,7 @@ move log out link under account instead of support. */
   font-size: 1.2rem !important;
   font-weight: 700 !important;
   height: auto !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   line-height: 1em !important;
   padding: 1.2rem !important;
   text-transform: uppercase !important;
@@ -551,14 +589,18 @@ move log out link under account instead of support. */
 .full-width-layout .side-panel {
   background: #fff !important;
   border-radius: 0 .6rem .6rem 0 !important;
-  box-shadow: 0 .1rem .4rem 0 rgba(39,42,49,.2);
+  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.2) !important;
+}
+
+.btn-add .text {
+  letter-spacing: .1em !important;
 }
 
 .btn-add-block {
   border-radius: .6rem !important;
   font-size: 1.2rem !important;
   font-weight: 700 !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   line-height: 1em !important;
   padding: .6rem .8rem !important;
   text-transform: uppercase !important;
@@ -590,7 +632,7 @@ move log out link under account instead of support. */
 .cover:before {
   background: #272A31 !important;
   border-radius: .5rem .5rem 0 0 !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
 }
 
 .cover.active {
@@ -608,7 +650,7 @@ move log out link under account instead of support. */
 
 .block-card.active {
   background: rgba(39,42,49,0) !important;
-  box-shadow: 0 .1rem .4rem 0 rgba(39,42,49,.2);
+  box-shadow: 0 .9rem .6rem -.6rem rgba(28,26,100,.2) !important;
 }
 
 .block-card .card-content {
@@ -620,7 +662,7 @@ move log out link under account instead of support. */
 .block-card .block-card-header .id-text {
   font-family: inherit !important;
   font-size: 1.2rem !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   margin-left: 1rem !important;
   opacity: .7 !important;
   text-transform: uppercase !important;
@@ -686,6 +728,11 @@ move log out link under account instead of support. */
 .section-header .info-popup {
   right: 1.6rem !important;
   width: 1.8rem !important;
+  top: 2.2rem !important;
+}
+
+.content-col .creator-edit-sheet-wrapper .creator-edit-sheet {
+  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.2) !important;
 }
 
 .content-col .creator-edit-sheet-wrapper .creator-edit-sheet .sheet-content {
@@ -706,7 +753,7 @@ move log out link under account instead of support. */
   color: inherit !important;
   font-weight: 400 !important;
   font-size: 1.2rem !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   text-transform: uppercase !important;
 }
 
@@ -723,7 +770,7 @@ move log out link under account instead of support. */
 
 .centered-layout-nav-header {
   font-size: 1.2rem !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   text-transform: uppercase !important;
 }
 
@@ -735,30 +782,57 @@ move log out link under account instead of support. */
   background: transparent !important;
 }
 
+.block-add-button {
+  margin: 0 !important;
+  padding: .6rem 0 !important;
+}
+
+.blocks-panel .section-desc {
+  display: none !important;
+}
+
+.add-button-wrapper .info-popup {
+  margin: 0 !important;
+}
+
+.block-add-popup {
+  border-radius: .6rem;
+}
+
+.block-add-popup .col-list.scrollbar {
+  margin: 0 !important;
+  border-radius: .6rem 0 0 .6rem;
+}
+
 .block-add-popup .col-list h5 {
   font-size: 1.2rem !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   text-transform: uppercase !important;
 }
 
 .block-add-popup h6 {
-  font-size: 1.2rem !important;
-  letter-spacing: .14em !important;
-  text-transform: uppercase !important;
+  font-size: 1.8rem !important;
+  font-weight: 400 !important;
+  letter-spacing: .05em !important;
 }
 
 .personality-top-row .answer-tag,
 .quiz-top-row .answer-tag,
 .poll-top-row .answer-tag {
   font-size: 1.2rem !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   text-transform: uppercase !important;
 }
 
 .options-col .options {
   background: #fff !important;
-  box-shadow: 0 .1rem .4rem 0 rgba(39,42,49,.2);
+  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.2) !important;
   margin-top: 1.5rem !important;
+}
+
+.rid-banner {
+  background: #8280F1 !important;
+  color: #fff !important;
 }
 
 /* this is for the save leads alert in the options sidebar */
@@ -912,7 +986,7 @@ move log out link under account instead of support. */
   font-size: 1.2rem !important;
   font-weight: 700 !important;
   height: 3.6rem !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   text-transform: uppercase !important;
 }
 
@@ -1028,7 +1102,11 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
   font-family: inherit !important;
   font-size: 1rem !important;
   font-weight: 700 !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
+}
+
+.logic-side-panel .white-box {
+  margin-bottom: 1.6rem !important;
 }
 
 .logic-side-panel .logic-editor {
@@ -1050,7 +1128,7 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 .logic-block .top-bar .id {
   font-family: inherit !important;
   font-size: 1.2rem !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   margin-left: 1rem !important;
   opacity: .7 !important;
   text-transform: uppercase !important;
@@ -1059,7 +1137,7 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 .logic-side-panel .logic-editor .editor-top {
   font-family: inherit !important;
   font-size: 1.2rem !important;
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   margin: 0 0 1.2rem !important;
   opacity: .7 !important;
   text-transform: uppercase !important;
@@ -1071,7 +1149,7 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 }
 
 .logic-block .logic-type {
-  letter-spacing: .14em !important;
+  letter-spacing: .1em !important;
   text-transform: uppercase !important;
 }
 
@@ -1143,6 +1221,15 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 
 
 /*SETTINGS*/
+.riddle-settings .collapse-toggle {
+  background: #fff !important;
+}
+
+.riddle-settings .collapse-toggle:focus,
+.riddle-settings .collapse-toggle:hover {
+  background: rgba(39,42,49,.1) !important;
+}
+
 .settings-field .field-header .rid-dropdown,
 .settings-field .field-header .rid-multiselect,
 .settings-field .field-header .field-label {
@@ -1194,8 +1281,9 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
   padding-top: .9rem !important;
 }
 .palette-item .palette-info .rid-radio .form-check-label {
-  font-weight: 700 !important;
-  letter-spacing: 0 !important;
+  font-size: 1.8rem !important;
+  font-weight: 400 !important;
+  letter-spacing: .05em !important;
 }
 
 
@@ -1208,6 +1296,7 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 
 .white-box {
   border-radius: .6rem;  
+  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.2) !important;
 }
 
 
