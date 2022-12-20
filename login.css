@@ -26,6 +26,10 @@ body {
 
 .login .social-logins .btn-social {
   border-radius: .375rem;
+  font-size: .75rem;
+  letter-spacing: .14em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .login .form-col {
