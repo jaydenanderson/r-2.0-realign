@@ -80,6 +80,14 @@ h3, .h3 {
   font-weight: bold;
 }
 
+.form-check-label {
+  white-space: normal !important;
+}
+
+.form-check {
+  margin-bottom: 1rem;
+}
+
 .login .login-features .label {
   padding-top: 0;
 }
@@ -172,7 +180,7 @@ h3, .h3 {
 }
 
 .navbar .navbar-toggler-icon {
-  background: #272A31;
+  color: #272A31;
 }
 
 .login:after {
