@@ -401,14 +401,19 @@ move log out link under account instead of support. */
 .section-header .title,
 .collapse-toggle {
   font-family: inherit !important;
-  font-size: 1.2rem !important;
-  font-weight: 700 !important;
-  letter-spacing: .14em !important;
-  text-transform: uppercase !important;
+  font-size: 1.8rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: inherit !important;
 }
 
-.collapse-toggle {
-  color: inherit !important;
+.section-header .title {
+  padding: 2.1rem 2.4rem !important;
+}
+
+.side-panel .section-header .title {
+  padding: 2.4rem 1.6rem !important;
 }
 
 .side-panel .collapse-toggle {
@@ -417,17 +422,18 @@ move log out link under account instead of support. */
   padding: 1.2rem 4.8rem 1.2rem 1.6rem !important;
 }
 
-.count-tag {
-  margin: -.4rem 0;
-}
-
 .side-panel .collapse-toggle {
   border-radius: 0 !important;
 }
 
+.count-tag {
+  margin: -.4rem 0;
+  font-size: 1.2rem;
+}
+
 .creator-top-bar {
   background: #fff !important;
-  box-shadow: 0 .6rem 2.4rem rgba(28,26,100,.15) !important;
+  box-shadow: 0 .2rem 1.2rem rgba(28,26,100,.15) !important;
   height: 7.2rem !important;
   position: relative !important;
   z-index: 2 !important;
@@ -532,11 +538,20 @@ move log out link under account instead of support. */
 }
 
 .full-width-layout .toolbar.h-100 {
+  background: #272A31 !important;
   border-radius: .6rem 0 0 .6rem !important;
 }
 
+.toolbar-btn-wrapper.active .toolbar-btn,
+.toolbar-btn-wrapper:not(.prevent-active) .toolbar-btn.router-link-active {
+  color: #19d2f1 !important;
+  background: rgba(255,255,255,.1) !important;
+}
+
 .full-width-layout .side-panel {
+  background: #fff !important;
   border-radius: 0 .6rem .6rem 0 !important;
+  box-shadow: 0 .1rem .4rem 0 rgba(39,42,49,.2);
 }
 
 .btn-add-block {
@@ -568,13 +583,32 @@ move log out link under account instead of support. */
   width: 3.6rem !important;
 }
 
+.cover {
+  border-color: #272A31 !important;
+}
+
 .cover:before {
+  background: #272A31 !important;
   border-radius: .5rem .5rem 0 0 !important;
   letter-spacing: .14em !important;
 }
 
+.cover.active {
+  border-color: #272A31 !important;
+}
+
 .block-card {
   border-radius: .6rem !important;
+  background: rgba(39,42,49,.05) !important;
+}
+
+.block-card:hover {
+  background: rgba(39,42,49,.1) !important;
+}
+
+.block-card.active {
+  background: rgba(39,42,49,0) !important;
+  box-shadow: 0 .1rem .4rem 0 rgba(39,42,49,.2);
 }
 
 .block-card .card-content {
@@ -634,7 +668,7 @@ move log out link under account instead of support. */
   color: inherit !important;
   font-family: inherit !important;
   font-size: 1.4rem !important;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   letter-spacing: 0 !important;
 }
 
@@ -670,7 +704,7 @@ move log out link under account instead of support. */
 
 .content-col .creator-edit-sheet-wrapper .creator-edit-sheet .sheet-header p {
   color: inherit !important;
-  font-weight: bold !important;
+  font-weight: 400 !important;
   font-size: 1.2rem !important;
   letter-spacing: .14em !important;
   text-transform: uppercase !important;
@@ -722,6 +756,8 @@ move log out link under account instead of support. */
 }
 
 .options-col .options {
+  background: #fff !important;
+  box-shadow: 0 .1rem .4rem 0 rgba(39,42,49,.2);
   margin-top: 1.5rem !important;
 }
 
@@ -1054,6 +1090,22 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
   height: 4.8rem !important;
   letter-spacing: .14rem !important;
   line-height: 1.6rem !important;
+  color: rgba(39,42,49,.5) !important;
+}
+
+.tabs .tab {
+  color: rgba(39,42,49,.5) !important;
+}
+
+.rid-tab-strip .nav-tabs .nav-link:hover,
+.tabs .tab:hover {
+  color: rgba(39,42,49,.8) !important;
+}
+
+.rid-tab-strip .nav-tabs .nav-link.active,
+.tabs .tab.router-link-active,
+.tabs .tab:focus {
+  color: #272A31 !important;
 }
 
 .logic-block .logic-type {
@@ -1075,6 +1127,13 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
   top: 1rem !important;
 }
 
+.logic-side-panel .white-box .editor label {
+  color: inherit !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  font-size: 14px !important;
+}
+
 .branches-editor .white-box.error {
   font-family: inherit !important;
 }
@@ -1093,6 +1152,19 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 .design-side-panel .collapse-toggle,
 .design-side-panel .rid-dropdown {
   border-radius: 0 !important;
+}
+
+.design-card h2 {
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+.team-preset .create-preset-btn.btn {
+  color: rgba(39,42,49,1) !important;
+}
+
+.team-preset .create-preset-btn.btn[disabled] {
+  color: rgba(39,42,49,.3) !important;
 }
 
 .settings-item .settings-header {
