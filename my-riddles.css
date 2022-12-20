@@ -19,13 +19,6 @@ body {
   overflow-x:  hidden !important;
 }
 
-.riddle-list-toolbar-wrapper .riddle-list-toolbar .riddle-type-filter .riddle-type-btn,
-.riddle-list-toolbar-wrapper .riddle-list-toolbar .filter-dropdown-btn {
-  font-size: 1.2rem !important;
-  font-weight: bold !important;
-  letter-spacing: .14em !important;
-}
-
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: inherit !important;
   font-weight: 700 !important;
@@ -74,6 +67,24 @@ h2, .h2 {
   box-shadow: none !important;
 }
 
+.btn-success {
+  box-shadow: none !important;
+  background: #63DFA3 !important;
+  border-color: #63DFA3 !important;
+}
+
+.btn-check:focus+.btn-success,
+.btn-success:focus,
+.btn-success:hover {
+  background: #63DFA3 !important;
+  border-color: #63DFA3 !important;
+}
+
+.btn-success:active {
+  background: #63DFA3 !important;
+  border-color: #63DFA3 !important;
+}
+
 .rid-dropdown {
   border-radius: .6rem !important;
   height: auto !important;
@@ -108,6 +119,19 @@ h2, .h2 {
 
 
 /* MAIN PAGE */
+.riddle-list-toolbar-wrapper .riddle-list-toolbar .riddle-type-filter .riddle-type-btn,
+.riddle-list-toolbar-wrapper .riddle-list-toolbar .filter-dropdown-btn {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  letter-spacing: .14em !important;
+}
+
+.riddle-list-toolbar-wrapper .riddle-list-toolbar .search-filter.open .search-btn, 
+.riddle-list-toolbar-wrapper .riddle-list-toolbar .search-filter:focus-within .search-btn, 
+.riddle-list-toolbar-wrapper .riddle-list-toolbar .search-filter:hover .search-btn {
+  right: 0 !important;
+}
+
 .card .card-body .card-head .card-title {
   font-family: inherit !important;
   font-weight: 700 !important;
@@ -315,7 +339,7 @@ move log out link under account instead of support. */
 /* CREATE PAGE */
 
 /* commenting this out as a class needs to be added. this should style the text at the top of the create page.*/
-/*.create-page .page-header h2 {
+.create-page .page-header h2 {
   font-size: 6rem !important;
   letter-spacing: -.05em !important;
   line-height: 1em !important;
@@ -326,7 +350,7 @@ move log out link under account instead of support. */
   font-size: 1.8rem !important;
   line-height: 1em !important;
 }
-*/
+
 
 .card .card-title .icon {
   display: inline-block;
@@ -694,6 +718,37 @@ move log out link under account instead of support. */
   margin-top: 1.5rem !important;
 }
 
+/* this is for the save leads alert in the options sidebar */
+.options-col .rid-banner {
+  background: #8280F1 !important;
+  color: #fff !important;
+}
+
+.options-col .rid-banner .btn {
+  background: #fff !important;
+  border-color: #8280F1 !important;
+  color: #8280F1 !important;
+}
+
+.options-col .rid-banner .btn:hover,
+.options-col .rid-banner .btn:focus {
+  background: #fff !important;
+  border-color: #8280F1 !important;
+  color: #8280F1 !important;
+  opacity: .8;
+}
+
+.options-col .rid-banner .btn:active {
+  background: #fff !important;
+  border-color: #8280F1 !important;
+  color: #8280F1 !important;
+  opacity: .5;
+}
+
+.options-col .options .options-info .rid-banner {
+  border-radius: 0 !important;
+}
+
 .settings-field .field-header .field-label {
   font-size: 1.4rem !important;
   letter-spacing: 0 !important;
@@ -723,6 +778,10 @@ move log out link under account instead of support. */
 
 .media-picker-dialog-editor .options-field .options-item .options-header .editor .rid-text-box {
   background: transparent !important;
+}
+
+.media-picker-dialog-editor .options-item .options-header .options-label {
+  padding-top: 0 !important;
 }
 
 .options-field .options-item .options-header .editor .rid-text-box .form-control {
@@ -835,7 +894,6 @@ move log out link under account instead of support. */
 
 
 
-
 /* RICH TEXT EDITOR
 i screwed up the smooth transition on the focus state. i tried my best to get it working but failed.
 */
@@ -904,7 +962,7 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 }
 
 .main-media.wide {
-  padding-top: 51%;
+  padding-top: 51% !important;
 }
 
 .personality-top-row .answer-img,
