@@ -1,11 +1,11 @@
 /*my riddles
 
-- all the !importants can and should be removed. i only have them there to beat the [data-v...] selector that is generated. i've tried using existing selectors, so removing the !importants should still work (there's probably a few places where this is not the case).
+- all the !importants can and should be removed. i only have them there for previewing purposes. the [data-v...] selector makes beating that css difficult. i've tried using existing selectors, so removing the !importants should work for the most part. i'm sure there are some exceptions.
 - change all font-family values to: 'articulat cf', sans-serif !important
 - general size changes: body font size: 14px, button height: 48px, small button height: 36px. the scale everything should be based off is 12px.
-- the rem values are based on 10 here instead of 12 like the homepage. changing that right now is probably an unneeded breaking change. i've tried to adjust accordingly.*/
+- the rem values are based on 10 here instead of 12 like the homepage. changing that base rem value right now is an unneeded breaking change. i've tried to adjust accordingly.
 
-/* change logo fill to: #8280F1
+change logo fill everywhere to #8280F1
 <svg class="riddle-logo"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#8280F1"><g id="mark-dark"><path d="M47.5171569,19.0095238 L39.8036616,5.73333333 C38.8083719,4.03809524 36.6263906,3.44761905 34.9037737,4.43809524 L21.5439233,12.0952381 C19.8213065,13.0857143 19.2471009,15.2571429 20.2232504,16.952381 L27.9367457,30.2095238 C28.9320354,31.9047619 31.1140167,32.4952381 32.8366336,31.5047619 L46.196484,23.847619 C47.9191009,22.8761905 48.5124466,20.7047619 47.5171569,19.0095238 Z" id="Shape" opacity="0.7"></path><path d="M37.4382056,12.0190476 L26.5282991,1.21904762 C25.1310654,-0.171428571 22.8533832,-0.171428571 21.4561495,1.21904762 L10.546243,12.0190476 C9.14900935,13.4095238 9.14900935,15.6571429 10.546243,17.047619 L21.4561495,27.847619 C22.8533832,29.2380952 25.1310654,29.2380952 26.5282991,27.847619 L37.4382056,17.047619 C38.8354393,15.6571429 38.8354393,13.4095238 37.4382056,12.0190476 Z" id="Shape" opacity="0.5"></path><path d="M26.4708785,12.0761905 L13.111028,4.43809524 C11.3884112,3.46666667 9.20642991,4.03809524 8.21114019,5.73333333 L0.49764486,18.952381 C-0.49764486,20.647619 0.0957009346,22.8190476 1.81831776,23.8095238 L15.1781682,31.447619 C16.900785,32.4190476 19.0827664,31.847619 20.0780561,30.152381 L27.7915514,16.9333333 C28.7677009,15.2190476 28.1934953,13.047619 26.4708785,12.0761905 Z" id="Shape" opacity="0.3"></path></g></g></g></svg>
  */
 
@@ -41,20 +41,20 @@ h2, .h2 {
 }
 
 .btn {
+  border-radius: .6rem !important;
   font-size: 1.2rem !important;
   letter-spacing: .14em !important;
   min-height: 4.8rem !important;
-  text-transform: uppercase !important;
   padding: 1rem 1.8rem;
-  border-radius: .6rem !important;
+  text-transform: uppercase !important;
 }
 
 .btn.btn-sm {
   font-weight: bold !important;
   letter-spacing: .14em !important;
   min-height: 3.6rem !important;
-  text-transform: uppercase !important;
   padding: 1rem 1.2rem !important;
+  text-transform: uppercase !important;
 }
 
 .btn-group-sm > .btn, .btn-sm {
@@ -76,9 +76,9 @@ h2, .h2 {
 
 .rid-dropdown {
   border-radius: .6rem !important;
-  padding: 1.2rem 4rem 1.2rem 1.2rem !important;
-  min-height: 4.8rem !important;
   height: auto !important;
+  min-height: 4.8rem !important;
+  padding: 1.2rem 4rem 1.2rem 1.2rem !important;
 }
 .rid-dropdown .rid-icon {
   font-size: 1.8rem !important;
@@ -100,8 +100,8 @@ h2, .h2 {
 .tabs .tab {
   font-size: 1.2rem !important;
   font-weight: bold !important;
-  letter-spacing: .14em !important;
   height: 4.8rem !important;
+  letter-spacing: .14em !important;
   line-height: 4.8rem !important;
 }
 
@@ -111,6 +111,8 @@ h2, .h2 {
 .card .card-body .card-head .card-title {
   font-family: inherit !important;
   font-weight: 700 !important;
+  font-size: 2.4rem !important;
+  line-height: 1.2em !important;
 }
 
 .card .card-body .card-blocks, .card .card-body .card-date {
@@ -134,9 +136,9 @@ h2, .h2 {
 
 .main-navbar {
   background: #fff !important;
+  min-height: 7.2rem;
   padding: 0 1.6rem !important;
   position:  relative !important;
-  min-height: 7.2rem;
 }
 
 .main-navbar:after {
@@ -170,7 +172,8 @@ h2, .h2 {
   text-transform: none !important;
 }
 
-.nav-item.megamenu h6 {
+.nav-item.megamenu h6,
+.nav-item.megamenu label {
   font-size: 1.2rem !important;
   font-weight: bold !important;
   letter-spacing: .14em !important;
@@ -179,8 +182,42 @@ h2, .h2 {
 
 .megamenu .dropdown-toggle {
   height: 3.6rem !important;
-  width: 3.6rem !important;
   min-height: 3.6rem !important;
+  width: 3.6rem !important;
+}
+
+.megamenu .image-bg {
+  background: none #272A31 !important;
+  color: #fff !important;
+  padding: 2.2rem !important;
+}
+
+.megamenu .image-bg h6{
+  color: #19d2f1 !important;
+  margin-bottom: 15px !important;
+}
+
+.megamenu .image-bg p{
+  line-height: 1.75em;
+  color: rgba(255,255,255,.7);
+}
+
+.megamenu .image-bg strong {
+  display: block;
+  position: relative;
+  color: #fff;
+}
+
+.megamenu .image-bg strong:before {
+  background: #19d2f1;
+  border-radius: .2rem;
+  content: '';
+  display: inline-block;
+  height: .2rem;
+  margin-right: .6rem;
+  margin-top: -.2rem;
+  vertical-align: middle;
+  width: .8rem;
 }
 
 .dropdown-header {
@@ -226,15 +263,16 @@ h2, .h2 {
 .megamenu .riddle-links .nav-link,
 .megamenu .riddle-links .nav-link:hover,
 .megamenu .riddle-links .nav-link:active {
-  color: #8280F1 !important;
+  color: #272A31 !important;
+  opacity: .7 !important;
 }
 
 .megamenu .riddle-links .nav-link:hover {
-  opacity: .8 !important;
+  opacity: .4 !important;
 }
 
 .megamenu .riddle-links .nav-link:active {
-  opacity: .7 !important;
+  opacity: .3 !important;
 }
 
 .megamenu .nav-link:hover {
@@ -243,16 +281,56 @@ h2, .h2 {
 
 .megamenu .riddle-links .nav-link.text-dark {
   color: #272A31 !important;
+  opacity: 1 !important;
+}
+
+/* remove padding helper classes (px-1, py-1) */
+.megamenu .riddle-links .nav-link {
+  line-height: 1em !important;
+  padding: 1.1rem 0 !important;
+}
+
+/* remove icons as it's weird to only have two links with icons.
+move log out link under account instead of support. */
+.megamenu .nav-link .rid-icon {
+  display: none !important;
 }
 
 .megamenu .btn.btn-sm {
-  padding-left: .6rem !important;
-  padding-right: .6rem !important;
+  padding-left: .8rem !important;
+  padding-right: .8rem !important;
 }
 
-.megamenu.nav-item .nav-link {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+.megamenu .rid-dropdown {
+  font-size: 1.2rem !important;
+  letter-spacing: .14em !important;
+  min-height: 3.6rem !important;
+  padding: 0.2rem !important;
+}
+
+
+
+
+
+/* CREATE PAGE */
+
+/* commenting this out as a class needs to be added. this should style the text at the top of the create page.*/
+/*.create-page .page-header h2 {
+  font-size: 6rem !important;
+  letter-spacing: -.05em !important;
+  line-height: 1em !important;
+  margin-bottom: 2.4rem;
+}
+
+.create-page .page-header p {
+  font-size: 1.8rem !important;
+  line-height: 1em !important;
+}
+*/
+
+.card .card-title .icon {
+  display: inline-block;
+  margin-top: -.6rem !important;
 }
 
 .card-col .card .card-body .card-title {
@@ -299,19 +377,23 @@ h2, .h2 {
   text-transform: uppercase !important;
 }
 
+.side-panel .collapse-toggle {
+  border-radius: 0 !important;
+}
+
 .creator-top-bar {
   background: #fff !important;
+  box-shadow: 0 .6rem 2.4rem rgba(28,26,100,.15) !important;
   height: 7.2rem !important;
   position: relative !important;
-  box-shadow: 0 .6rem 2.4rem rgba(28,26,100,.15) !important;
   z-index: 2 !important;
 }
 
 .modal-header .creator-top-bar {
-  box-shadow: none !important;
-  flex-grow: 100;
   align-items: center;
+  box-shadow: none !important;
   display: flex;
+  flex-grow: 100;
 }
 
 .creator-tabs {
@@ -367,11 +449,11 @@ h2, .h2 {
   font-size: 1.2rem !important;
   font-weight: 400 !important;
   letter-spacing: .05em !important;
+  margin-top: -.4rem !important;
   margin: 0 .4rem !important;
   opacity: .7 !important;
   padding: 0 !important;
   text-transform: none !important;
-  margin-top: -.4rem !important;
 }
 
 .creator-title .rid-icon {
@@ -384,21 +466,21 @@ h2, .h2 {
 }
 
 .profile-menu .profile-menu-btn {
-  width: 4.8rem;
   height: 4.8rem;
   line-height: 4.8rem;
+  width: 4.8rem;
 }
 
 .profile-menu-btn-text {
-  width: 3.6rem !important;
   height: 3.6rem !important;
   line-height: 3.6rem !important;
+  width: 3.6rem !important;
 }
 
 .full-width-layout .toolbar.h-100,
 .full-width-layout .side-panel {
-  margin-top: 1.5rem !important;
   height: calc(100% - 1.5rem) !important;
+  margin-top: 1.5rem !important;
 }
 
 .full-width-layout .toolbar.h-100 {
@@ -410,13 +492,13 @@ h2, .h2 {
 }
 
 .btn-add-block {
+  border-radius: .6rem !important;
   font-size: 1.2rem !important;
   font-weight: 700 !important;
   letter-spacing: .14em !important;
-  text-transform: uppercase !important;
-  padding: .6rem .8rem !important;
   line-height: 1em !important;
-  border-radius: .6rem !important;
+  padding: .6rem .8rem !important;
+  text-transform: uppercase !important;
 }
 
 .btn-add-block .rid-icon {
@@ -424,23 +506,23 @@ h2, .h2 {
 }
 
 .btn-add-block span {
+  align-self: center !important;
   display: block !important;
   margin-top: 2px !important;
-  align-self: center !important;
 }
 
 .btn.options-toggle {
   color:  #272A31 !important;
+  height: 3.6rem !important;
+  justify-content: center !important;
+  min-height: 3.6rem !important;
   padding: 0 !important;
   width: 3.6rem !important;
-  height: 3.6rem !important;
-  min-height: 3.6rem !important;
-  justify-content: center !important;
 }
 
 .cover:before {
-  letter-spacing: .14em !important;
   border-radius: .5rem .5rem 0 0 !important;
+  letter-spacing: .14em !important;
 }
 
 .block-card {
@@ -473,8 +555,8 @@ h2, .h2 {
 }
 
 .form-control {
-  font-family: inherit !important;
   border-radius: .6rem !important;
+  font-family: inherit !important;
   padding: 1.2rem 1.8rem;
 }
 
@@ -485,9 +567,9 @@ h2, .h2 {
 }
 
 .form-control-sm {
-  min-height: 3.6rem !important;
   font-size: 1.4rem !important;
   letter-spacing: .05em !important;
+  min-height: 3.6rem !important;
   padding: .6rem 1.2rem !important;
 }
 
@@ -520,8 +602,8 @@ h2, .h2 {
 }
 
 .section-header .info-popup {
-  width: 1.8rem !important;
   right: 1.6rem !important;
+  width: 1.8rem !important;
 }
 
 .content-col .creator-edit-sheet-wrapper .creator-edit-sheet .sheet-content {
@@ -538,10 +620,10 @@ h2, .h2 {
 }
 
 .content-col .creator-edit-sheet-wrapper .creator-edit-sheet .sheet-header p {
+  color: rgba(39,42,49,.5) !important;
   font-size: 1.2rem !important;
   letter-spacing: .14em !important;
   text-transform: uppercase !important;
-  color: rgba(39,42,49,.5) !important;
 }
 
 .personality-items-editor,
@@ -551,8 +633,8 @@ h2, .h2 {
 }
 
 .creator-edit-sheet .sheet-header {
-  padding: 1.2rem 2.4rem 0 2.4rem !important;
   line-height: 4.8rem;
+  padding: 1.2rem 2.4rem 0 2.4rem !important;
 }
 
 .centered-layout-nav-header {
@@ -595,8 +677,8 @@ h2, .h2 {
 
 .settings-field .field-header .field-label {
   font-size: 1.4rem !important;
-  padding-top: 1.4rem !important;
   letter-spacing: 0 !important;
+  padding-top: 1.4rem !important;
 }
 
 .settings-field .field-header .rid-text-box .rid-input {
@@ -608,11 +690,11 @@ h2, .h2 {
 .settings-field .field-header .rid-dropdown,
 .settings-field .field-header .rid-multiselect,
 .options-field .options-item .options-header {
+  border-radius: 0 !important;
   font-family: inherit !important;
   font-size: 1.4rem !important;
   font-weight: 400 !important;
   letter-spacing: 0 !important;
-  border-radius: 0 !important;
 }
 
 .settings-field .field-header {
@@ -635,6 +717,11 @@ h2, .h2 {
 .modal-header {
   font-weight: 700 !important;
   letter-spacing: 0 !important;
+  padding: 2.4rem 2.4rem 0 !important;
+}
+
+.modal-body {
+  padding: 2.4rem !important;
 }
 
 .k-input,
@@ -654,15 +741,17 @@ h2, .h2 {
 
 .items-editor .item .item-actions .btn {
   height:  3.6rem !important;
-  width:  3.6rem !important;
   padding: 0 !important;
+  width:  3.6rem !important;
 }
 
-/* rich text editor */
+/* RICH TEXT EDITOR
+i screwed up the smooth transition on the focus state. i tried my best to get it working but failed.
+*/
 
 .rich-text-editor .toolbar {
-  margin-top: 0 !important;
   border-radius: 0 0 .5rem .5rem !important;
+  margin-top: 0 !important;
 }
 
 .rich-text-editor .form-control {
@@ -688,8 +777,8 @@ h2, .h2 {
 
 .rich-text-editor.isEditing .toolbar,
 .rich-text-editor:focus-within .toolbar {
-  max-height: 3.6rem !important;
   border-bottom-width: 1px !important;
+  max-height: 3.6rem !important;
 }
 
 .rich-text-editor .toolbar .toolbar-more {
@@ -698,8 +787,8 @@ h2, .h2 {
 
 .rich-text-editor.isEditing .toolbar .toolbar-more,
 .rich-text-editor:focus-within .toolbar .toolbar-more {
-  max-height: 3.6rem !important;
   margin: 0 !important;
+  max-height: 3.6rem !important;
 }
 
 .rich-text-editor.isEditing .toolbar.showToolbarMore,
@@ -710,9 +799,9 @@ h2, .h2 {
 .rich-text-editor .toolbar .toolbar-btn,
 .rich-text-editor .toolbar .dropdown-toggle,
 .rich-text-editor .toolbar .toolbar-btn {
-  min-height: 3.6rem !important;
-  margin-top: 0 !important;
   margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  min-height: 3.6rem !important;
 }
 
 .white-box .editor label {
@@ -720,8 +809,8 @@ h2, .h2 {
 }
 
 .answer-img .btn-add {
-  min-height: 3.6rem !important;
   border-radius: .6rem;
+  min-height: 3.6rem !important;
 }
 
 .main-media.wide {
@@ -740,10 +829,10 @@ h2, .h2 {
 }
 
 .logic-side-panel .key {
-  font-size: 1rem !important;
-  letter-spacing: .14em !important;
   font-family: inherit !important;
+  font-size: 1rem !important;
   font-weight: 700 !important;
+  letter-spacing: .14em !important;
 }
 
 .logic-side-panel .logic-editor {
@@ -771,9 +860,9 @@ h2, .h2 {
   font-family: inherit !important;
   font-size: 1.2rem !important;
   letter-spacing: .14em !important;
+  margin: 0 0 1.2rem !important;
   opacity: .7 !important;
   text-transform: uppercase !important;
-  margin: 0 0 1.2rem !important;
 }
 
 .logic-block .logic-type {
@@ -782,14 +871,14 @@ h2, .h2 {
 }
 
 .logic-block .logic-type {
-  text-transform: uppercase !important;
   letter-spacing: .14em !important;
+  text-transform: uppercase !important;
 }
 
 .score-value-wrapper {
   border-radius: .6rem !important;
-  padding: 1.2rem 4rem 1.2rem 1.2rem !important;
   height: 4.8rem !important;
+  padding: 1.2rem 4rem 1.2rem 1.2rem !important;
 }
 
 .block-option-item .text {
@@ -798,7 +887,6 @@ h2, .h2 {
 
 .rid-tab-strip .nav-tabs .nav-link {
   font-size: 1.2rem !important;
-  height: 16px !important;
   height: 4.8rem !important;
   letter-spacing: .14rem !important;
   line-height: 1.6rem !important;
@@ -811,8 +899,8 @@ h2, .h2 {
 
 .score-value-wrapper {
   border-radius: .6rem !important;
-  padding: 1.2rem 4rem 1.2rem 1.2rem !important;
   height: 4.8rem !important;
+  padding: 1.2rem 4rem 1.2rem 1.2rem !important;
 }
 
 .block-option-item .text {
@@ -874,8 +962,14 @@ h2, .h2 {
   font-weight: 700 !important;
 }
 
+.white-box {
+  border-radius: .6rem;  
+}
+
+
+
+
+
 /*OTHER NOTES
 
 - remove svg filter on the "more" options in the text editor (url(#filter-1)). it makes the icons look blurry.
-
-*/
