@@ -786,6 +786,11 @@ move log out link under account instead of support. */
   padding-top: 0 !important;
 }
 
+.search-button {
+  height: 4.8rem !important;
+  margin-left: 1.2rem;
+}
+
 .options-field .options-item .options-header .editor .rid-text-box .form-control {
   padding: .6rem .7rem !important;
 }
