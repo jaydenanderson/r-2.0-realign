@@ -14,7 +14,7 @@ change logo fill everywhere to #8280F1
 body {
   background: #E6EDFB !important;
   color: #272A31 !important;
-  font-family: 'articulat cf', sans-serif !important;
+  font-family: 'articulat cf','articulat-cf', sans-serif;
   /*without this the gradient shadow on the navbar causes horizontal scrolling*/
   overflow-x:  hidden !important;
 }
