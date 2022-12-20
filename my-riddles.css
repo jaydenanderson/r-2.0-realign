@@ -69,20 +69,22 @@ h2, .h2 {
 
 .btn-success {
   box-shadow: none !important;
-  background: #63DFA3 !important;
-  border-color: #63DFA3 !important;
+  background: #61D79D !important;
+  border-color: #61D79D !important;
 }
 
 .btn-check:focus+.btn-success,
 .btn-success:focus,
 .btn-success:hover {
-  background: #63DFA3 !important;
-  border-color: #63DFA3 !important;
+  background: #61D79D !important;
+  border-color: #61D79D !important;
+  opacity: .8;
 }
 
 .btn-success:active {
-  background: #63DFA3 !important;
-  border-color: #63DFA3 !important;
+  background: #61D79D !important;
+  border-color: #61D79D !important;
+  opacity: .5;
 }
 
 .rid-dropdown {
