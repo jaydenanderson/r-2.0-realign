@@ -407,8 +407,11 @@ move log out link under account instead of support. */
   text-transform: uppercase !important;
 }
 
-.side-panel .collapse-toggle {
+.collapse-toggle {
   color: inherit !important;
+}
+
+.side-panel .collapse-toggle {
   display: flex !important;
   justify-content: space-between !important;
   padding: 1.2rem 4.8rem 1.2rem 1.6rem !important;
@@ -1004,6 +1007,10 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
   background: #E6EDFB !important;
 }
 
+..logic-block .title {
+  font-weight: 400;
+}
+
 .logic-block .top-bar .id {
   font-family: inherit !important;
   font-size: 1.2rem !important;
@@ -1086,6 +1093,10 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 .design-side-panel .collapse-toggle,
 .design-side-panel .rid-dropdown {
   border-radius: 0 !important;
+}
+
+.settings-item .settings-header {
+  font-family: inherit !important;
 }
 
 
