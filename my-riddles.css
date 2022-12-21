@@ -654,13 +654,14 @@ move log out link under account instead of support. */
 
 .btn-add .text {
   letter-spacing: .1em !important;
+  font-weight: 400 !important;
 }
 
 .btn-add-block {
   border-radius: .6rem !important;
   color: #272A31 !important;
   font-size: 1.2rem !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   letter-spacing: .1em !important;
   line-height: 1em !important;
   padding: .6rem .8rem !important;
@@ -724,8 +725,8 @@ move log out link under account instead of support. */
 
 .block-card.active {
   background: rgba(39,42,49,0) !important;
-  box-shadow: 0 .9rem .6rem -.6rem rgba(92,207,237,.6) !important;
-  border-color: #19d2f1 !important;
+  box-shadow: 0 .9rem .6rem -.6rem rgba(28,26,100,.25) !important;
+  border-color: rgba(39,42,49,.4) !important;
   color: rgba(39,42,49,1) !important;
 }
 
