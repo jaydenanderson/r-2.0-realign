@@ -633,6 +633,7 @@ move log out link under account instead of support. */
 
 .btn-add-block {
   border-radius: .6rem !important;
+  color: #272A31 !important;
   font-size: 1.2rem !important;
   font-weight: 700 !important;
   letter-spacing: .1em !important;
@@ -676,8 +677,9 @@ move log out link under account instead of support. */
 
 .block-card {
   border-radius: .6rem !important;
+  border-color: rgba(39,42,49,.2) !important;
   background: rgba(39,42,49,.05) !important;
-  transition: background .2s ease-in-out !important;
+  transition: background .2s ease-in-out, box-shadow .2s ease-in-out !important;
 }
 
 .block-card:hover {
@@ -688,7 +690,7 @@ move log out link under account instead of support. */
 .block-card.active {
   background: rgba(39,42,49,0) !important;
   box-shadow: 0 .9rem .6rem -.6rem rgba(92,207,237,.6) !important;
-  border-color: #19d2f1;
+  border-color: #19d2f1 !important;
 }
 
 .block-card .card-content {
