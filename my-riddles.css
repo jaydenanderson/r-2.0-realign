@@ -118,6 +118,32 @@ h2, .h2 {
   line-height: 4.8rem !important;
 }
 
+.tooltip-inner {
+  background: rgba(39,42,49,8) !important;
+  font-family: inherit !important;
+  font-size: 1.4rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow:before,
+.bs-tooltip-top .tooltip-arrow:before {
+ border-top-color:rgba(39,42,49,8) !important;
+}
+.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow:before,
+.bs-tooltip-end .tooltip-arrow:before {
+ border-right-color:rgba(39,42,49,8) !important;
+}
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow:before,
+.bs-tooltip-bottom .tooltip-arrow:before {
+ border-bottom-color:rgba(39,42,49,8) !important;
+}
+.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow:before,
+.bs-tooltip-start .tooltip-arrow:before {
+ border-left-color:rgba(39,42,49,8) !important;
+
+}
+
 
 
 /* MAIN PAGE */
