@@ -437,6 +437,15 @@ move log out link under account instead of support. */
   border-radius: .6rem !important;
 }
 
+.sheet-content .btn-delete-result {
+  width: 3.6rem !important;
+  min-height: 3.6rem !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  right: 6rem !important;
+  top: 1.8rem !important;
+}
+
 .sheet-content .star:before {
   display: none !important;
 }
@@ -956,7 +965,7 @@ move log out link under account instead of support. */
 .media-display .actions .delete-btn {
   right: 0 !important;
   width: 3.6rem !important;
-  max-height: 3.6rem !important;
+  min-height: 3.6rem !important;
   justify-content: center !important;
 }
 
@@ -1256,6 +1265,10 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 
 .branch-block p {
   background: #272A31 !important;
+}
+
+.branch-block p .expand {
+  background: #505664 !important;
 }
 
 .result-block .logic-type {
