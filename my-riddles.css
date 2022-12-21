@@ -628,10 +628,15 @@ move log out link under account instead of support. */
 }
 
 .full-width-layout .toolbar.h-100 {
+  width: 7.2rem !important;
   background: #272A31 !important;
   border-radius: .6rem 0 0 .6rem !important;
   box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125),
   0 0 0 1px rgba(28,26,100,.9)  !important;
+}
+
+.toolbar-btn-wrapper .toolbar-btn {
+  margin: 1.2rem !important;
 }
 
 .toolbar-btn-wrapper.active .toolbar-btn,
