@@ -166,7 +166,8 @@ h2, .h2 {
 }
 
 .card {
-  box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125) !important;
+  box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125),
+  0 0 0 1px rgba(28,26,100,.125) !important;
   border: none !important;
 }
 
@@ -174,7 +175,8 @@ h2, .h2 {
 .card:focus,
 .card:focus-within,
 .card:hover {
-  box-shadow: 0 1.2rem 2.4rem -.6rem rgba(28,26,100,.2) !important;
+  box-shadow: 0 1.8rem 2.4rem -.6rem rgba(28,26,100,.25),
+  0 0 0 1px rgba(28,26,100,.125)  !important;
 }
 
 .columns .card {
@@ -520,7 +522,8 @@ move log out link under account instead of support. */
 
 .creator-top-bar {
   background: #fff !important;
-  box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125) !important;
+  box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125),
+  0 0 0 1px rgba(28,26,100,.125)  !important;
   height: 7.2rem !important;
   position: relative !important;
   z-index: 2 !important;
@@ -638,7 +641,8 @@ move log out link under account instead of support. */
 .full-width-layout .side-panel {
   background: #fff !important;
   border-radius: 0 .6rem .6rem 0 !important;
-  box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125) !important;
+  box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125),
+  0 0 0 1px rgba(28,26,100,.125)  !important;
 }
 
 .btn-add .text {
@@ -705,7 +709,8 @@ move log out link under account instead of support. */
 
 .block-card:hover {
   background: #fff !important;
-  box-shadow: 0 .9rem .6rem -.6rem rgba(28,26,100,.125) !important;
+  box-shadow: 0 .9rem .6rem -.6rem rgba(28,26,100,.125),
+  0 0 0 1px rgba(28,26,100,.125)  !important;
 }
 
 .block-card.active {
@@ -797,7 +802,8 @@ move log out link under account instead of support. */
 }
 
 .content-col .creator-edit-sheet-wrapper .creator-edit-sheet {
-  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.125) !important;
+  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.125),
+  0 0 0 1px rgba(28,26,100,.125)  !important;
 }
 
 .content-col .creator-edit-sheet-wrapper .creator-edit-sheet .sheet-content {
@@ -900,7 +906,8 @@ move log out link under account instead of support. */
 
 .options-col .options {
   background: #fff !important;
-  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.125) !important;
+  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.125),
+  0 0 0 1px rgba(28,26,100,.125)  !important;
   margin-top: 1.5rem !important;
 }
 
@@ -1243,7 +1250,8 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 }
 
 .logic-block:hover {
-  box-shadow: 0 .9rem .6rem -.6rem rgba(28,26,100,.125) !important;
+  box-shadow: 0 .9rem .6rem -.6rem rgba(28,26,100,.125),
+  0 0 0 1px rgba(28,26,100,.125)  !important;
 }
 
 .logic-block.selected {
@@ -1436,7 +1444,8 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 
 .white-box {
   border-radius: .6rem;  
-  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.125) !important;
+  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.125),
+  0 0 0 1px rgba(28,26,100,.125)  !important;
 }
 
 .white-box .white-box {
