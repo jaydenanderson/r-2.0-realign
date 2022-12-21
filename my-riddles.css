@@ -676,6 +676,7 @@ move log out link under account instead of support. */
 .block-card {
   border-radius: .6rem !important;
   background: rgba(39,42,49,.05) !important;
+  transition: background .2s ease-in-out !important;
 }
 
 .block-card:hover {
@@ -1119,6 +1120,14 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 
 .white-box .editor label {
   font-family: inherit !important;
+  color:  inherit !important;
+  font-size: 1.4rem !important;
+  letter-spacing: .03em !important;
+  font-weight: 400 !important;
+}
+
+.score-slider .slider-tooltip {
+  background: #272A31 !important;
 }
 
 .answer-img .btn-add {
@@ -1150,6 +1159,7 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 
 .logic-side-panel .white-box {
   margin-bottom: 1.6rem !important;
+  box-shadow: none !important;
 }
 
 .logic-side-panel .logic-editor {
