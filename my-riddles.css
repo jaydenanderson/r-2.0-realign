@@ -56,9 +56,10 @@ h2, .h2 {
 }
 
 .btn.btn-icon {
+  border-radius: 1000px !important;
+  color: #272A31 !important;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
-  border-radius: 1000px !important;
 }
 
 .btn + .btn {
@@ -668,7 +669,11 @@ move log out link under account instead of support. */
 .cover:before {
   background: #272A31 !important;
   border-radius: .5rem .5rem 0 0 !important;
+  left: -1px !important;
   letter-spacing: .1em !important;
+  right: -1px !important;
+  top: -1px !important;
+  width: auto !important;
 }
 
 .cover.active {
@@ -876,6 +881,10 @@ move log out link under account instead of support. */
   text-transform: uppercase !important;
 }
 
+.quiz-top-row .answer-tag {
+  background: #272A31 !important;
+}
+
 .options-col .options {
   background: #fff !important;
   box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.2) !important;
@@ -946,6 +955,9 @@ move log out link under account instead of support. */
 
 .media-display .actions .delete-btn {
   right: 0 !important;
+  width: 3.6rem !important;
+  max-height: 3.6rem !important;
+  justify-content: center !important;
 }
 
 .media-picker-dialog-editor .options-item .options-header .options-label {
@@ -1150,8 +1162,8 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
   min-height: 3.6rem !important;
 }
 
-.main-media.wide {
-  padding-top: 51% !important;
+.quiz-top-row .answer-img {
+  width: 6.4rem !important;
 }
 
 .personality-top-row .answer-img,
@@ -1237,11 +1249,26 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 .logic-block .logic-type {
   font-family: inherit !important;
   font-size: 1.2rem !important;
-}
-
-.logic-block .logic-type {
+  background: #272A31 !important;
   letter-spacing: .1em !important;
   text-transform: uppercase !important;
+}
+
+.branch-block p {
+  background: #272A31 !important;
+}
+
+.result-block .logic-type {
+  background: #272A31 !important;
+}
+
+.dopdown-input .tag {
+  background: #272A31 !important;
+}
+
+.bg-End,
+.bg-RiddleScore {
+  background: #272A31 !important;
 }
 
 .score-value-wrapper {
@@ -1408,3 +1435,4 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 - change tooltip bg color to rgba(39,42,49,.8)
 - change "WINNING RESULT" text to "Winning Result"
 - change "OTHER RESULT" text to "Other Result"
+- change "ANSWER EXPLANATIONS" text in options sidbar to "Answer Explanations"
