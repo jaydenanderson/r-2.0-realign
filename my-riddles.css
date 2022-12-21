@@ -523,7 +523,7 @@ move log out link under account instead of support. */
 .creator-top-bar {
   background: #fff !important;
   box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125),
-  0 0 0 1px rgba(28,26,100,.125)  !important;
+  0 0 0 1px rgba(28,26,100,.075)  !important;
   height: 7.2rem !important;
   position: relative !important;
   z-index: 2 !important;
@@ -630,6 +630,8 @@ move log out link under account instead of support. */
 .full-width-layout .toolbar.h-100 {
   background: #272A31 !important;
   border-radius: .6rem 0 0 .6rem !important;
+  box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125),
+  0 0 0 1px rgba(28,26,100,.9)  !important;
 }
 
 .toolbar-btn-wrapper.active .toolbar-btn,
@@ -653,7 +655,7 @@ move log out link under account instead of support. */
   border-radius: .6rem !important;
   color: #272A31 !important;
   font-size: 1.2rem !important;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   letter-spacing: .1em !important;
   line-height: 1em !important;
   padding: .6rem .8rem !important;
@@ -705,31 +707,42 @@ move log out link under account instead of support. */
   border-color: rgba(39,42,49,.2) !important;
   background: rgba(39,42,49,.05) !important;
   transition: background .2s ease-in-out, box-shadow .2s ease-in-out !important;
+  height: auto !important;
+  color: rgba(39,42,49,.5) !important;
+  padding-bottom: 1.2rem !important;
 }
 
 .block-card:hover {
   background: #fff !important;
-  box-shadow: 0 .9rem .6rem -.6rem rgba(28,26,100,.125),
-  0 0 0 1px rgba(28,26,100,.125)  !important;
+  box-shadow: 0 .9rem .6rem -.6rem rgba(28,26,100,.125) !important;
 }
 
 .block-card.active {
   background: rgba(39,42,49,0) !important;
   box-shadow: 0 .9rem .6rem -.6rem rgba(92,207,237,.6) !important;
   border-color: #19d2f1 !important;
+  color: rgba(39,42,49,1) !important;
 }
 
 .block-card .card-content {
   font-family: inherit !important;
   font-size: 1.4rem !important;
-  padding-top: 0 !important;
+  padding: 0 1.8rem 0 4.8rem !important;
+  color: inherit !important;
+  line-height: 2.4rem !important;
+}
+
+.block-card.active .block-card-header .id-text,
+.block-card.active .card-content {
+  color: inherit !important;
 }
 
 .block-card .block-card-header .id-text {
+  align-self: center !important;
   font-family: inherit !important;
   font-size: 1.2rem !important;
   letter-spacing: .1em !important;
-  margin-left: 1rem !important;
+  margin-left: 1.1rem !important;
   opacity: .7 !important;
   text-transform: uppercase !important;
 }
@@ -740,7 +753,7 @@ move log out link under account instead of support. */
 }
 
 .block-card-header {
-  padding: .5rem !important;
+  padding: 1.2rem 1.2rem 0 1.2rem !important;
   margin: 0 !important;
 }
 
