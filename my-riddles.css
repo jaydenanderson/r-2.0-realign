@@ -673,6 +673,7 @@ move log out link under account instead of support. */
 
 .cover {
   border-color: #272A31 !important;
+  padding-top: 2.4rem !important;
 }
 
 .cover:before {
@@ -683,6 +684,8 @@ move log out link under account instead of support. */
   right: -1px !important;
   top: -1px !important;
   width: auto !important;
+  line-height: 2.4rem !important;
+  height: 2.4rem !important;
 }
 
 .cover.active {
