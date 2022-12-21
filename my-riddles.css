@@ -687,7 +687,7 @@ move log out link under account instead of support. */
 
 .block-card.active {
   background: rgba(39,42,49,0) !important;
-  box-shadow: 0 .9rem .6rem -.6rem rgba(92,207,237,.2) !important;
+  box-shadow: 0 .9rem .6rem -.6rem rgba(92,207,237,.6) !important;
   border-color: #19d2f1;
 }
 
@@ -714,6 +714,10 @@ move log out link under account instead of support. */
 .block-card-header {
   padding: .5rem !important;
   margin: 0 !important;
+}
+
+.block-card .block-card-header .card-actions .dropdown-toggle {
+  border-radius: 1000px !important;
 }
 
 .form-control {
@@ -1207,7 +1211,7 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 
 .logic-block.selected {
   border-color: #19d2f1 !important;
-  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(92,207,237,.2) !important;
+  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(92,207,237,.6) !important;
 }
 
 .logic-side-panel .logic-editor .editor-top {
