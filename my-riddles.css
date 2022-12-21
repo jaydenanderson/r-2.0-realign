@@ -58,6 +58,7 @@ h2, .h2 {
 .btn.btn-icon {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+  border-radius: 1000px !important;
 }
 
 .btn + .btn {
@@ -794,6 +795,10 @@ move log out link under account instead of support. */
   text-transform: uppercase !important;
 }
 
+.sheet-content .collapse-content > p {
+  color: rgba(39,42,49,.7);
+}
+
 .personality-items-editor,
 .poll-items-editor,
 .quiz-items-editor {
@@ -826,6 +831,10 @@ move log out link under account instead of support. */
 
 .blocks-panel .section-desc {
   display: none !important;
+}
+
+.section-header .section-desc {
+  color: rgba(39,42,49,.7);
 }
 
 .add-button-wrapper .info-popup {
@@ -1148,6 +1157,10 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 /*LOGIC PAGE*/
 .logic-actions {
   margin-top: 2.4rem !important;
+}
+
+.logic-side-panel .section-desc {
+  color: rgba(39,42,49,1);
 }
 
 .logic-side-panel .key {
