@@ -662,6 +662,11 @@ move log out link under account instead of support. */
   text-transform: uppercase !important;
 }
 
+.btn-add-block:focus,
+.btn-add-block:hover {
+  background: rgba(39,42,49,.1) !important;
+}
+
 .btn-add-block .rid-icon {
   margin-top: 0 !important;
 }
@@ -738,13 +743,7 @@ move log out link under account instead of support. */
 }
 
 .block-card .block-card-header .id-text {
-  align-self: center !important;
-  font-family: inherit !important;
-  font-size: 1.2rem !important;
-  letter-spacing: .1em !important;
-  margin-left: 1.1rem !important;
-  opacity: .7 !important;
-  text-transform: uppercase !important;
+  display: none !important;
 }
 
 .block-card .block-card-header .card-actions .dropdown-toggle,
@@ -755,6 +754,7 @@ move log out link under account instead of support. */
 .block-card-header {
   padding: 1.2rem 1.2rem 0 1.2rem !important;
   margin: 0 !important;
+  justify-content: space-between !important;
 }
 
 .block-card .block-card-header .card-actions .dropdown-toggle {
@@ -1485,3 +1485,190 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 - change "WINNING RESULT" text to "Winning Result"
 - change "OTHER RESULT" text to "Other Result"
 - change "ANSWER EXPLANATIONS" text in options sidbar to "Answer Explanations"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+              _                                     _                    _     
+             ( )_                                  ( )                  ( )    
+   __        | ,_) _ __   __    ___ ___     __     | |__     _ _    ___ | |/') 
+ /'__`\(`\/')| |  ( '__)/'__`\/' _ ` _ `\ /'__`\   |  _ `\ /'_` ) /'___)| , <  
+(  ___/ >  < | |_ | |  (  ___/| ( ) ( ) |(  ___/   | | | |( (_| |( (___ | |\`\ 
+`\____)(_/\_)`\__)(_)  `\____)(_) (_) (_)`\____)   (_) (_)`\__,_)`\____)(_) (_)
+                                                                               
+                                                                               
+        _                                      _                          _    
+       (_ )                                   ( )                        ( )_  
+ _ _    | |    __     _ _   ___    __        _| |   _        ___     _   | ,_) 
+( '_`\  | |  /'__`\ /'_` )/',__) /'__`\    /'_` | /'_`\    /' _ `\ /'_`\ | |   
+| (_) ) | | (  ___/( (_| |\__, \(  ___/   ( (_| |( (_) )   | ( ) |( (_) )| |_  
+| ,__/'(___)`\____)`\__,_)(____/`\____)   `\__,_)`\___/'   (_) (_)`\___/'`\__) 
+| |                                                                            
+(_)                                                                            
+                        _    _                                                 
+                       ( )_ ( )     _                                          
+ _   _   ___    __     | ,_)| |__  (_)  ___                                    
+( ) ( )/',__) /'__`\   | |  |  _ `\| |/',__)                                   
+| (_) |\__, \(  ___/   | |_ | | | || |\__, \                                   
+`\___/'(____/`\____)   `\__)(_) (_)(_)(____/      
+
+
+* Symbolset
+* www.symbolset.com
+* Copyright © 2013 Oak Studios LLC
+*
+* Upload this file to your web server
+* and place this within your <head> tags.
+* <link href="webfonts/ss-junior.css" rel="stylesheet" />
+*/
+
+@font-face {
+  font-family: "SSGeomiconsSquared";
+  src: url('https://jaydenanderson.github.io/geomicons/fonts/ss-geomicons-squared.eot');
+  src: url('https://jaydenanderson.github.io/geomicons/fonts/ss-geomicons-squared.eot?#iefix') format('embedded-opentype'),
+       url('https://jaydenanderson.github.io/geomicons/fonts/ss-geomicons-squared.woff') format('woff'),
+       url('https://jaydenanderson.github.io/geomicons/fonts/ss-geomicons-squared.ttf')  format('truetype'),
+       url('https://jaydenanderson.github.io/geomicons/fonts/ss-geomicons-squared.svg#SSGeomiconsSquared') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+html:hover [class^="ss-"]{-ms-zoom: 1;}
+
+.ss-icon, .ss-icon.ss-geomicons-squared,
+[class^="ss-"]:before, [class*=" ss-"]:before,
+[class^="ss-"].ss-geomicons-squared:before, [class*=" ss-"].ss-geomicons-squared:before,
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"].ss-geomicons-squared.right:after, [class*=" ss-"].ss-geomicons-squared.right:after {
+  font-family: "SSGeomiconsSquared";
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+[class^="ss-"].right:before,
+[class*=" ss-"].right:before{display:none;content:'';}
+
+.ss-crosshair:before,.ss-crosshair.right:after{content:'⌖'}.ss-search:before,.ss-search.right:after{content:'🔎'}.ss-view:before,.ss-view.right:after{content:'👀'}.ss-link:before,.ss-link.right:after{content:'🔗'}.ss-move:before,.ss-move.right:after{content:''}.ss-write:before,.ss-write.right:after{content:'✎'}.ss-compose:before,.ss-compose.right:after{content:'📝'}.ss-lock:before,.ss-lock.right:after{content:'🔒'}.ss-unlock:before,.ss-unlock.right:after{content:'🔓'}.ss-key:before,.ss-key.right:after{content:'🔑'}.ss-backspace:before,.ss-backspace.right:after{content:'⌫'}.ss-ban:before,.ss-ban.right:after{content:'🚫'}.ss-trash:before,.ss-trash.right:after{content:''}.ss-radioactive:before,.ss-radioactive.right:after{content:'☢'}.ss-skull:before,.ss-skull.right:after{content:'💀'}.ss-lightning:before,.ss-lightning.right:after{content:'☇'}.ss-tag:before,.ss-tag.right:after{content:''}.ss-bookmark:before,.ss-bookmark.right:after{content:'🔖'}.ss-flag:before,.ss-flag.right:after{content:'⚑'}.ss-like:before,.ss-like.right:after{content:'👍'}.ss-dislike:before,.ss-dislike.right:after{content:'👎'}.ss-heart:before,.ss-heart.right:after{content:'♥'}.ss-star:before,.ss-star.right:after{content:'⋆'}.ss-shield:before,.ss-shield.right:after{content:''}.ss-trophy:before,.ss-trophy.right:after{content:'🏆'}.ss-medal:before,.ss-medal.right:after{content:''}.ss-crown:before,.ss-crown.right:after{content:'👑'}.ss-bullseye:before,.ss-bullseye.right:after{content:'🎯'}.ss-crop:before,.ss-crop.right:after{content:''}.ss-layers:before,.ss-layers.right:after{content:''}.ss-cut:before,.ss-cut.right:after{content:'✂'}.ss-clipboard:before,.ss-clipboard.right:after{content:'📋'}.ss-brush:before,.ss-brush.right:after{content:''}.ss-paintroller:before,.ss-paintroller.right:after{content:''}.ss-paint:before,.ss-paint.right:after{content:''}.ss-phone:before,.ss-phone.right:after{content:'📞'}.ss-rotaryphone:before,.ss-rotaryphone.right:after{content:'☎'}.ss-voicemail:before,.ss-voicemail.right:after{content:'⌕'}.ss-megaphone:before,.ss-megaphone.right:after{content:'📢'}.ss-rss:before,.ss-rss.right:after{content:''}.ss-reply:before,.ss-reply.right:after{content:'↩'}.ss-envelope:before,.ss-envelope.right:after{content:'✉'}.ss-inbox:before,.ss-inbox.right:after{content:'📥'}.ss-chat:before,.ss-chat.right:after{content:'💬'}.ss-user:before,.ss-user.right:after{content:'👤'}.ss-users:before,.ss-users.right:after{content:'👥'}.ss-usergroup:before,.ss-usergroup.right:after{content:''}.ss-male:before,.ss-male.right:after{content:''}.ss-userprofile:before,.ss-userprofile.right:after{content:''}.ss-contacts:before,.ss-contacts.right:after{content:'📇'}.ss-ghost:before,.ss-ghost.right:after{content:'👻'}.ss-cart:before,.ss-cart.right:after{content:''}.ss-emptycart:before,.ss-emptycart.right:after{content:''}.ss-gift:before,.ss-gift.right:after{content:'🎁'}.ss-calculator:before,.ss-calculator.right:after{content:''}.ss-barchart:before,.ss-barchart.right:after{content:'📊'}.ss-piechart:before,.ss-piechart.right:after{content:''}.ss-stock:before,.ss-stock.right:after{content:''}.ss-box:before,.ss-box.right:after{content:'📦'}.ss-home:before,.ss-home.right:after{content:'⌂'}.ss-warehouse:before,.ss-warehouse.right:after{content:''}.ss-globe:before,.ss-globe.right:after{content:'🌐'}.ss-navigate:before,.ss-navigate.right:after{content:''}.ss-compass:before,.ss-compass.right:after{content:''}.ss-signpost:before,.ss-signpost.right:after{content:''}.ss-map:before,.ss-map.right:after{content:''}.ss-location:before,.ss-location.right:after{content:''}.ss-pin:before,.ss-pin.right:after{content:'📍'}.ss-code:before,.ss-code.right:after{content:''}.ss-bug:before,.ss-bug.right:after{content:'🐛'}.ss-puzzle:before,.ss-puzzle.right:after{content:''}.ss-airplay:before,.ss-airplay.right:after{content:''}.ss-music:before,.ss-music.right:after{content:'♫'}.ss-mic:before,.ss-mic.right:after{content:'🎤'}.ss-headphones:before,.ss-headphones.right:after{content:'🎧'}.ss-volume:before,.ss-volume.right:after{content:'🔈'}.ss-metronome:before,.ss-metronome.right:after{content:''}.ss-camera:before,.ss-camera.right:after{content:'📷'}.ss-picture:before,.ss-picture.right:after{content:'🌄'}.ss-video:before,.ss-video.right:after{content:'📹'}.ss-tv:before,.ss-tv.right:after{content:'📺'}.ss-videogame:before,.ss-videogame.right:after{content:'🎮'}.ss-dpad:before,.ss-dpad.right:after{content:''}.ss-play:before,.ss-play.right:after{content:'▶'}.ss-pause:before,.ss-pause.right:after{content:''}.ss-stop:before,.ss-stop.right:after{content:'■'}.ss-record:before,.ss-record.right:after{content:'●'}.ss-rewind:before,.ss-rewind.right:after{content:'⏪'}.ss-fastforward:before,.ss-fastforward.right:after{content:'⏩'}.ss-skipback:before,.ss-skipback.right:after{content:'⏮'}.ss-skipforward:before,.ss-skipforward.right:after{content:'⏭'}.ss-eject:before,.ss-eject.right:after{content:'⏏'}.ss-repeat:before,.ss-repeat.right:after{content:'🔁'}.ss-shuffle:before,.ss-shuffle.right:after{content:'🔀'}.ss-storagebox:before,.ss-storagebox.right:after{content:''}.ss-book:before,.ss-book.right:after{content:'📕'}.ss-notebook:before,.ss-notebook.right:after{content:'📓'}.ss-grid:before,.ss-grid.right:after{content:''}.ss-rows:before,.ss-rows.right:after{content:''}.ss-columns:before,.ss-columns.right:after{content:''}.ss-thumbnails:before,.ss-thumbnails.right:after{content:''}.ss-filter:before,.ss-filter.right:after{content:''}.ss-desktop:before,.ss-desktop.right:after{content:'💻'}.ss-laptop:before,.ss-laptop.right:after{content:''}.ss-tablet:before,.ss-tablet.right:after{content:''}.ss-smartphone:before,.ss-smartphone.right:after{content:''}.ss-cell:before,.ss-cell.right:after{content:'📱'}.ss-battery:before,.ss-battery.right:after{content:'🔋'}.ss-highbattery:before,.ss-highbattery.right:after{content:''}.ss-mediumbattery:before,.ss-mediumbattery.right:after{content:''}.ss-lowbattery:before,.ss-lowbattery.right:after{content:''}.ss-emptybattery:before,.ss-emptybattery.right:after{content:''}.ss-chargingbattery:before,.ss-chargingbattery.right:after{content:''}.ss-lightbulb:before,.ss-lightbulb.right:after{content:'💡'}.ss-spade:before,.ss-spade.right:after{content:'♠'}.ss-club:before,.ss-club.right:after{content:'♣'}.ss-diamond:before,.ss-diamond.right:after{content:'♦'}.ss-download:before,.ss-download.right:after{content:''}.ss-downloadbox:before,.ss-downloadbox.right:after{content:''}.ss-upload:before,.ss-upload.right:after{content:''}.ss-uploadcloud:before,.ss-uploadcloud.right:after{content:''}.ss-addcloud:before,.ss-addcloud.right:after{content:''}.ss-removecloud:before,.ss-removecloud.right:after{content:''}.ss-fork:before,.ss-fork.right:after{content:''}.ss-merge:before,.ss-merge.right:after{content:''}.ss-replay:before,.ss-replay.right:after{content:'↺'}.ss-refresh:before,.ss-refresh.right:after{content:'↻'}.ss-sync:before,.ss-sync.right:after{content:''}.ss-wifi:before,.ss-wifi.right:after{content:''}.ss-index:before,.ss-index.right:after{content:''}.ss-file:before,.ss-file.right:after{content:'📄'}.ss-files:before,.ss-files.right:after{content:''}.ss-folder:before,.ss-folder.right:after{content:'📁'}.ss-print:before,.ss-print.right:after{content:'⎙'}.ss-list:before,.ss-list.right:after{content:''}.ss-layout:before,.ss-layout.right:after{content:''}.ss-action:before,.ss-action.right:after{content:''}.ss-redirect:before,.ss-redirect.right:after{content:'↪'}.ss-expand:before,.ss-expand.right:after{content:'⤢'}.ss-contract:before,.ss-contract.right:after{content:''}.ss-scaleup:before,.ss-scaleup.right:after{content:''}.ss-scaledown:before,.ss-scaledown.right:after{content:''}.ss-info:before,.ss-info.right:after{content:'ℹ'}.ss-alert:before,.ss-alert.right:after{content:'⚠'}.ss-plus:before,.ss-plus.right:after{content:'+'}.ss-hyphen:before,.ss-hyphen.right:after{content:'-'}.ss-check:before,.ss-check.right:after{content:'✓'}.ss-delete:before,.ss-delete.right:after{content:'␡'}.ss-cat:before,.ss-cat.right:after{content:'🐈'}.ss-bird:before,.ss-bird.right:after{content:'🐦'}.ss-owl:before,.ss-owl.right:after{content:''}.ss-bone:before,.ss-bone.right:after{content:''}.ss-poo:before,.ss-poo.right:after{content:'💩'}.ss-tree:before,.ss-tree.right:after{content:'🌲'}.ss-leaf:before,.ss-leaf.right:after{content:'🍂'}.ss-flower:before,.ss-flower.right:after{content:'⚘'}.ss-mountains:before,.ss-mountains.right:after{content:'⛰'}.ss-settings:before,.ss-settings.right:after{content:'⚙'}.ss-dashboard:before,.ss-dashboard.right:after{content:''}.ss-notifications:before,.ss-notifications.right:after{content:'🔔'}.ss-contrast:before,.ss-contrast.right:after{content:'◐'}.ss-magnet:before,.ss-magnet.right:after{content:''}.ss-toolbox:before,.ss-toolbox.right:after{content:''}.ss-wrench:before,.ss-wrench.right:after{content:'🔧'}.ss-hammer:before,.ss-hammer.right:after{content:'🔨'}.ss-screwdriver:before,.ss-screwdriver.right:after{content:''}.ss-nut:before,.ss-nut.right:after{content:'🔩'}.ss-clock:before,.ss-clock.right:after{content:'⏲'}.ss-stopwatch:before,.ss-stopwatch.right:after{content:'⏱'}.ss-watch:before,.ss-watch.right:after{content:'⌚'}.ss-alarmclock:before,.ss-alarmclock.right:after{content:'⏰'}.ss-counterclockwise:before,.ss-counterclockwise.right:after{content:'⥀'}.ss-clockwise:before,.ss-clockwise.right:after{content:'⥁'}.ss-calendar:before,.ss-calendar.right:after{content:'📅'}.ss-addcalendar:before,.ss-addcalendar.right:after{content:''}.ss-removecalendar:before,.ss-removecalendar.right:after{content:''}.ss-checkcalendar:before,.ss-checkcalendar.right:after{content:''}.ss-icecream:before,.ss-icecream.right:after{content:'🍨'}.ss-popsicle:before,.ss-popsicle.right:after{content:''}.ss-coffee:before,.ss-coffee.right:after{content:''}.ss-espresso:before,.ss-espresso.right:after{content:''}.ss-mug:before,.ss-mug.right:after{content:'☕'}.ss-tea:before,.ss-tea.right:after{content:'🍵'}.ss-beer:before,.ss-beer.right:after{content:'🍺'}.ss-wineglass:before,.ss-wineglass.right:after{content:'🍷'}.ss-soda:before,.ss-soda.right:after{content:''}.ss-utensils:before,.ss-utensils.right:after{content:'🍴'}.ss-tshirt:before,.ss-tshirt.right:after{content:'👕'}.ss-tie:before,.ss-tie.right:after{content:''}.ss-glasses:before,.ss-glasses.right:after{content:'👓'}.ss-thermometer:before,.ss-thermometer.right:after{content:''}.ss-sun:before,.ss-sun.right:after{content:'☀'}.ss-cloud:before,.ss-cloud.right:after{content:'☁'}.ss-crescentmoon:before,.ss-crescentmoon.right:after{content:'🌙'}.ss-planet:before,.ss-planet.right:after{content:''}.ss-fan:before,.ss-fan.right:after{content:''}.ss-outlet:before,.ss-outlet.right:after{content:''}.ss-car:before,.ss-car.right:after{content:'🚘'}.ss-plane:before,.ss-plane.right:after{content:'✈'}.ss-bike:before,.ss-bike.right:after{content:'🚲'}.ss-sailboat:before,.ss-sailboat.right:after{content:'⛵'}.ss-rocket:before,.ss-rocket.right:after{content:'🚀'}.ss-highway:before,.ss-highway.right:after{content:''}.ss-briefcase:before,.ss-briefcase.right:after{content:'💼'}.ss-medicalbag:before,.ss-medicalbag.right:after{content:''}.ss-flask:before,.ss-flask.right:after{content:''}.ss-burst:before,.ss-burst.right:after{content:''}.ss-infinity:before,.ss-infinity.right:after{content:'∞'}.ss-up:before,.ss-up.right:after{content:'⬆'}.ss-right:before,.ss-right.right:after{content:'➡'}.ss-down:before,.ss-down.right:after{content:'⬇'}.ss-left:before,.ss-left.right:after{content:'⬅'}.ss-navigateup:before,.ss-navigateup.right:after{content:''}.ss-navigateright:before,.ss-navigateright.right:after{content:'▻'}.ss-navigatedown:before,.ss-navigatedown.right:after{content:''}.ss-navigateleft:before,.ss-navigateleft.right:after{content:'◅'}.ss-directup:before,.ss-directup.right:after{content:'▴'}.ss-directright:before,.ss-directright.right:after{content:'▹'}.ss-dropdown:before,.ss-dropdown.right:after{content:'▾'}.ss-directleft:before,.ss-directleft.right:after{content:'◃'}.ss-share:before,.ss-share.right:after{content:''}.ss-retweet:before,.ss-retweet.right:after{content:''}.ss-facebook:before,.ss-facebook.right:after{content:''}.ss-twitter:before,.ss-twitter.right:after{content:''}.ss-android:before,.ss-android.right:after{content:''}
+
+
+.block-card-header > [class*=" icon-"],
+.block-card-header > [class^="icon-"] {
+  width: 2.4rem !important;
+  height: 4.8rem !important;
+  border-radius: .3rem !important;
+  background: #272A31 !important;
+  color: #fff !important;
+  text-align: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  display: block;
+  line-height: 2.4rem;
+  margin-top: .3rem;
+
+  font-family: "SSGeomiconsSquared" !important;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.block-card-header > [class*=" icon-"]:before,
+.block-card-header > [class^="icon-"]:before {
+  content: '1';
+  font-family: 'articulat cf', 'articulat-cf', sans-serif;
+  font-size: 1.2rem;
+  display: block;
+  line-height: 3rem;
+  height: 2.4rem;
+}
+
+.icon-ic-block-Result:after {
+  content: '👤';
+}
+
+.cover .icon-ic-block-General-Content:after {
+  content: '▶';
+  font-size: 1rem;
+}
+
+.icon-ic-block-General-Content:after {
+  content: '';
+}
+
+.icon-ic-block-Result:after {
+  content: '👤';
+}
+
+.block-card-header > .rid-icon span {
+  display: none;
+}
+
+.block-card {
+  border:  transparent !important;
+  background:  transparent !important;
+  margin: 0 !important;
+}
+
+.block-card:hover {
+  box-shadow: none !important;
+  background: rgba(39,42,49,.1) !important;
+}
+
+.block-card.active {
+  background: #E0F5FB !important;
+  border-color: #E0F5FB !important;
+  color: #19d2f1 !important;
+  box-shadow: none !important;
+}
+
+.block-card .block-card-header {
+  padding: .8rem !important;
+}
+
+.block-card .block-card-header .card-actions .dropdown-toggle {
+  margin-top: 8px !important;
+}
+
+.block-card .card-content {
+  font-size: 1.2rem !important;
+  letter-spacing: .075em !important;
+  margin-top: -4.8rem;
+  min-height: 3.6rem !important;
+  line-height: 1.8rem !important;
+  padding-right: 4.8rem !important;
+}
