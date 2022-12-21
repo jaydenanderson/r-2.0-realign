@@ -885,13 +885,10 @@ move log out link under account instead of support. */
 .personality-top-row .answer-tag,
 .quiz-top-row .answer-tag,
 .poll-top-row .answer-tag {
+  background: #272A31 !important;
   font-size: 1.2rem !important;
   letter-spacing: .1em !important;
   text-transform: uppercase !important;
-}
-
-.quiz-top-row .answer-tag {
-  background: #272A31 !important;
 }
 
 .options-col .options {
@@ -1002,6 +999,19 @@ move log out link under account instead of support. */
 
 .modal-body .field-header {
   padding: 0 2.4rem !important;
+}
+
+.navigation {
+  background: #272A31 !important;
+}
+
+.answer-text {
+  color: rgba(39,42,49,.7) !important;
+}
+
+.totals,
+.totals th.totals {
+  background: #272A31 !important;
 }
 
 .embed-dialog .modal-dialog .modal-content .modal-body .rid-collapse .collapse-toggle .advanced-btn .rid-icon {
@@ -1171,13 +1181,10 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
   min-height: 3.6rem !important;
 }
 
-.quiz-top-row .answer-img {
-  width: 6.4rem !important;
-}
-
 .personality-top-row .answer-img,
 .quiz-top-row .answer-img,
 .poll-top-row .answer-img {
+  width: 6.4rem !important;
   height: 3.6rem !important;
 }
 
