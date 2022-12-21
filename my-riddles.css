@@ -17,12 +17,13 @@ body {
   font-family: 'articulat cf','articulat-cf', sans-serif;
   /*without this the gradient shadow on the navbar causes horizontal scrolling*/
   overflow-x:  hidden !important;
+  letter-spacing: .03em;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: inherit !important;
   font-weight: 700 !important;
-  letter-spacing: -.03em !important;
+  letter-spacing: 0 !important;
 }
 
 h1, .h1 {
@@ -103,7 +104,7 @@ h2, .h2 {
 
 .status-badge {
   font-weight: 400 !important;
-  letter-spacing: 0 !important;
+  letter-spacing: .03em !important;
 }
 
 .alert {
@@ -123,7 +124,8 @@ h2, .h2 {
   font-family: inherit !important;
   font-size: 1.4rem !important;
   font-weight: 400 !important;
-  letter-spacing: 0 !important;
+  letter-spacing: .03em !important;
+  border-radius: .6rem !important;
 }
 
 .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow:before,
@@ -232,7 +234,7 @@ h2, .h2 {
 
 .nav-item.megamenu {
   font-weight: normal !important;
-  letter-spacing: 0 !important;
+  letter-spacing: .03em !important;
   padding:  .5rem 1rem 0 !important;
   text-transform: none !important;
 }
@@ -433,8 +435,14 @@ move log out link under account instead of support. */
   border-radius: .6rem !important;
 }
 
-.sheet-content .star::before {
-  top: 1.4rem !important;
+.sheet-content .star:before {
+  display: none !important;
+}
+
+.star .collapse-toggle:before {
+  content: "";
+  font-family: RiddleIconFont !important;
+  margin-right: .6rem;
 }
 
 .section-header .title,
@@ -671,12 +679,14 @@ move log out link under account instead of support. */
 }
 
 .block-card:hover {
-  background: rgba(39,42,49,.1) !important;
+  background: #fff !important;
+  box-shadow: 0 .9rem .6rem -.6rem rgba(28,26,100,.2) !important;
 }
 
 .block-card.active {
   background: rgba(39,42,49,0) !important;
-  box-shadow: 0 .9rem .6rem -.6rem rgba(28,26,100,.2) !important;
+  box-shadow: 0 .9rem .6rem -.6rem rgba(92,207,237,.2) !important;
+  border-color: #19d2f1;
 }
 
 .block-card .card-content {
@@ -737,7 +747,7 @@ move log out link under account instead of support. */
   font-family: inherit !important;
   font-size: 1.4rem !important;
   font-weight: 400 !important;
-  letter-spacing: 0 !important;
+  letter-spacing: .03em !important;
 }
 
 .rid-textbox label p {
@@ -856,11 +866,6 @@ move log out link under account instead of support. */
   margin-top: 1.5rem !important;
 }
 
-.rid-banner {
-  background: #8280F1 !important;
-  color: #fff !important;
-}
-
 /* this is for the save leads alert in the options sidebar */
 .options-col .rid-banner {
   background: #8280F1 !important;
@@ -894,13 +899,13 @@ move log out link under account instead of support. */
 
 .settings-field .field-header .field-label {
   font-size: 1.4rem !important;
-  letter-spacing: 0 !important;
-  padding-top: 1.4rem !important;
+  letter-spacing: .03em !important;
+  padding-top: 1.6rem !important;
 }
 
 .settings-field .field-header .rid-text-box .rid-input {
   font-weight: 400 !important;
-  letter-spacing: 0 !important;
+  letter-spacing: .03em !important;
 }
 
 .settings-field .field-header,
@@ -911,7 +916,7 @@ move log out link under account instead of support. */
   font-family: inherit !important;
   font-size: 1.4rem !important;
   font-weight: 400 !important;
-  letter-spacing: 0 !important;
+  letter-spacing: .03em !important;
 }
 
 .settings-field .field-header {
@@ -921,6 +926,10 @@ move log out link under account instead of support. */
 
 .media-picker-dialog-editor .options-field .options-item .options-header .editor .rid-text-box {
   background: transparent !important;
+}
+
+.media-display .actions .delete-btn {
+  right: 0 !important;
 }
 
 .media-picker-dialog-editor .options-item .options-header .options-label {
@@ -937,12 +946,12 @@ move log out link under account instead of support. */
 }
 
 .options-field .label {
-  letter-spacing: 0 !important;
+  letter-spacing: .03em !important;
 }
 
 .modal-header {
   font-weight: 700 !important;
-  letter-spacing: 0 !important;
+  letter-spacing: .03em !important;
   padding: 2.4rem 2.4rem 0 !important;
 }
 
@@ -952,6 +961,14 @@ move log out link under account instead of support. */
 
 .modal-footer {
   padding: 0 2.4rem 2.4rem !important;
+}
+
+.modal-body .field-header {
+  padding: 0 2.4rem !important;
+}
+
+.embed-dialog .modal-dialog .modal-content .modal-body .rid-collapse .collapse-toggle .advanced-btn .rid-icon {
+  color: inherit;
 }
 
 .k-input,
@@ -1147,8 +1164,9 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
   background: #E6EDFB !important;
 }
 
-..logic-block .title {
-  font-weight: 400;
+.logic-block .title {
+  font-weight: 400 !important;
+  letter-spacing: .03em !important;
 }
 
 .logic-block .top-bar .id {
@@ -1160,13 +1178,31 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
   text-transform: uppercase !important;
 }
 
+.logic-block:hover {
+  box-shadow: 0 .9rem .6rem -.6rem rgba(28,26,100,.2) !important;
+}
+
+.logic-block.selected {
+  border-color: #19d2f1 !important;
+  box-shadow: 0 1.2rem 1.8rem -.6rem rgba(92,207,237,.2) !important;
+}
+
 .logic-side-panel .logic-editor .editor-top {
+  margin: 0 0 1.2rem !important;
+}
+
+.logic-side-panel .logic-editor .editor-top .id {
   font-family: inherit !important;
   font-size: 1.2rem !important;
   letter-spacing: .1em !important;
-  margin: 0 0 1.2rem !important;
   opacity: .7 !important;
   text-transform: uppercase !important;
+}
+
+.logic-side-panel .logic-editor .editor-content .title {
+  font-size: 1.4rem !important;
+  font-weight: 400 !important;
+  letter-spacing: .03em !important;
 }
 
 .logic-block .logic-type {
@@ -1234,7 +1270,7 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 .logic-side-panel .white-box .editor label {
   color: inherit !important;
   font-weight: 400 !important;
-  letter-spacing: 0 !important;
+  letter-spacing: .03em !important;
   font-size: 14px !important;
 }
 
@@ -1269,7 +1305,7 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 
 .design-card h2 {
   font-weight: 400 !important;
-  letter-spacing: 0 !important;
+  letter-spacing: .03em !important;
 }
 
 .team-preset .create-preset-btn.btn {
@@ -1282,6 +1318,10 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 
 .settings-item .settings-header {
   font-family: inherit !important;
+}
+
+.white-box .settings-field .field-header {
+  padding: 0 2.4rem !important;
 }
 
 
@@ -1300,7 +1340,7 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
   font-family: inherit !important;
   font-size: 1.4rem !important;
   font-weight: 400 !important;
-  letter-spacing: 0 !important;
+  letter-spacing: .03em !important;
 }
 
 .options-item .options-header .options-label {
@@ -1325,6 +1365,9 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
   box-shadow: 0 1.2rem 1.8rem -.6rem rgba(28,26,100,.2) !important;
 }
 
+.white-box .white-box {
+  box-shadow: none !important;
+}
 
 
 
@@ -1334,3 +1377,5 @@ i screwed up the smooth transition on the focus state. i tried my best to get it
 - remove svg filter on the "more" options in the text editor (url(#filter-1)). it makes the icons look blurry.
 - change tooltip font to articulat
 - change tooltip bg color to rgba(39,42,49,.8)
+- change "WINNING RESULT" text to "Winning Result"
+- change "OTHER RESULT" text to "Other Result"
