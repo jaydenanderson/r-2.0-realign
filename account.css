@@ -2,6 +2,8 @@
 These will need their own specific stylesheet so they don't effect what else is in 1.0.
 
 - Importants here matter to beat out inline helper classes.
+- Swap out image logo in navbar for logo from below: 
+<svg class="riddle-logo"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#8280F1"><g id="mark-dark"><path d="M47.5171569,19.0095238 L39.8036616,5.73333333 C38.8083719,4.03809524 36.6263906,3.44761905 34.9037737,4.43809524 L21.5439233,12.0952381 C19.8213065,13.0857143 19.2471009,15.2571429 20.2232504,16.952381 L27.9367457,30.2095238 C28.9320354,31.9047619 31.1140167,32.4952381 32.8366336,31.5047619 L46.196484,23.847619 C47.9191009,22.8761905 48.5124466,20.7047619 47.5171569,19.0095238 Z" id="Shape" opacity="0.7"></path><path d="M37.4382056,12.0190476 L26.5282991,1.21904762 C25.1310654,-0.171428571 22.8533832,-0.171428571 21.4561495,1.21904762 L10.546243,12.0190476 C9.14900935,13.4095238 9.14900935,15.6571429 10.546243,17.047619 L21.4561495,27.847619 C22.8533832,29.2380952 25.1310654,29.2380952 26.5282991,27.847619 L37.4382056,17.047619 C38.8354393,15.6571429 38.8354393,13.4095238 37.4382056,12.0190476 Z" id="Shape" opacity="0.5"></path><path d="M26.4708785,12.0761905 L13.111028,4.43809524 C11.3884112,3.46666667 9.20642991,4.03809524 8.21114019,5.73333333 L0.49764486,18.952381 C-0.49764486,20.647619 0.0957009346,22.8190476 1.81831776,23.8095238 L15.1781682,31.447619 C16.900785,32.4190476 19.0827664,31.847619 20.0780561,30.152381 L27.7915514,16.9333333 C28.7677009,15.2190476 28.1934953,13.047619 26.4708785,12.0761905 Z" id="Shape" opacity="0.3"></path></g></g></g></svg>
 */
 
 @import url("https://use.typekit.net/iwz2cpm.css");
@@ -16,6 +18,11 @@ body {
 
 
 /* NAVBAR */
+.navbar .riddle-logo {
+  height: 32px;
+  width: 48px;
+}
+
 .navbar {
   background: #fff !important;
   min-height: 72px;
@@ -46,9 +53,20 @@ body {
 }
 
 .navbar-nav > .nav-item {
-  padding: 0 12px !important;
+  padding: 0 8px !important;
 }
 
+/* MEGAMENU */
+.megamenu .dropdown-toggle {
+  font-size: 24px;
+  width: 36px;
+  height: 36px;
+  padding: 0 !important;
+}
+
+.navbar-nav > .nav-item.mega-menu {
+  padding: .6rem 0;
+}
 
 
 /* GENERAL */
