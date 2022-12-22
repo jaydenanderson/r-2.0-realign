@@ -29,7 +29,7 @@ body {
   color: #272A31;
   border-radius: .375rem;
   font-size: .75rem;
-  letter-spacing: .14em;
+  letter-spacing: .1em;
   font-weight: bold;
   text-transform: uppercase;
   padding: 9px 12px;
@@ -76,7 +76,7 @@ body {
 .login .social-logins .btn-social {
   border-radius: .375rem;
   font-size: .75rem;
-  letter-spacing: .14em;
+  letter-spacing: .1em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -167,7 +167,7 @@ h3, .h3{
 .card .btn-primary,
 #col-main .btn-primary {
   font-size: 12px;
-  letter-spacing: .14em;
+  letter-spacing: .1em;
   text-transform: uppercase;
   font-weight: bold;
   padding: 8px 12px;
@@ -201,7 +201,7 @@ h3, .h3{
 
 .card .btn-success {
   font-size: 12px;
-  letter-spacing: .14em;
+  letter-spacing: .1em;
   text-transform: uppercase;
   padding: 8px 12px;
 }
@@ -216,13 +216,13 @@ h3, .h3{
 .text-center small p  {
   display: flex;
   font-size: 12px;
-  letter-spacing: .14em;
+  letter-spacing: .1em;
   text-transform: uppercase;
   margin: 0;
   justify-content: center;
   display: block;
   font-size: 12px;
-  letter-spacing: .14em;
+  letter-spacing: .1em;
   color: #272A31 !important;
   padding: 27px 12px;
 }
