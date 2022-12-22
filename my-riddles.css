@@ -326,6 +326,11 @@ h2, .h2 {
   padding: .9rem 1.2rem !important;
 }
 
+.main-navbar .nav-item .nav-link:hover {
+  color: rgba(39,42,49,.7) !important;
+  background: rgba(39,42,49,.1) !important;
+}
+
 .main-navbar .nav-item .nav-link.router-link-active {
   background: #E0F5FB !important;
   border: none !important;

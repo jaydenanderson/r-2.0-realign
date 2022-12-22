@@ -14,6 +14,44 @@ body {
   letter-spacing: .03em;
 }
 
+
+/* NAVBAR */
+.navbar {
+  background: #fff !important;
+  min-height: 72px;
+  padding: 0 1rem !important;
+  position: relative !important;
+  box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125), 0 0 0 1px rgba(28,26,100,.075) !important;
+}
+
+.navbar .btn,
+.navbar-nav > .nav-item > .nav-link {
+  color: #272A31;
+  border-radius: .375rem;
+  font-size: .75rem;
+  letter-spacing: .14em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 9px 12px;
+  display: flex;
+}
+
+.navbar-nav > .nav-item > .nav-link:hover {
+  color: rgba(39,42,49,.7) !important;
+  background: rgba(39,42,49,.1) !important;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-nav > .nav-item {
+  padding: 0 12px !important;
+}
+
+
+
+/* GENERAL */
 .btn,
 .form-control {
   font-family: 'articulat cf','articulat-cf', sans-serif;
