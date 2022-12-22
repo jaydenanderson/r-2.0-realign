@@ -30,18 +30,24 @@ body {
   font-size: .875rem;
   color: #272A31;
   background: #EFF4FC;
+  letter-spacing: .03em;
 }
 
-.btn {
+.btn,
+.form-control {
   font-family: 'articulat cf','articulat-cf', sans-serif;
   border-radius: .375rem;
+}
+
+.form-control {
+  font-size: .875rem;
+  letter-spacing: .03em;
 }
 
 .jumbotron {
   border-radius: .375rem;
   position: relative;
   z-index: 3;
-  box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125), 0 0 0 1px rgba(28,26,100,.125) !important;
 }
 
 .login input {
@@ -58,7 +64,6 @@ body {
 
 .login .form-col {
   border-radius: .375rem 0 0 .375rem;
-  box-shadow: .6rem 0 .6rem -.6rem rgba(28,26,100,.125) !important;
 }
 
 .gray-light-bg {
@@ -69,186 +74,45 @@ a, a:hover {
   color: #8280F1;
 }
 
-h3, .h3 {
+h1, .h1,
+h3, .h3{
   font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: -.03em;
+  font-weight: 400;
+  letter-spacing: .05em;
 }
 
-.login label,
-.login .login-features .label {
-  letter-spacing: .10em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  font-weight: bold;
+#col-sidebar .list-group .list-group-item:first-child  {
+  font-size: inherit;
 }
 
-.form-check-label {
-  white-space: normal !important;
-}
-
-.form-check {
-  margin-bottom: 1rem;
-}
-
-.login .login-features .label {
-  padding-top: 0;
-}
-
-.login .social-logins .btn-social img {
-  height: 3rem;
-  width: 3rem;
-}
-
-.login .social-logins .btn-social span {
-  line-height: 3rem;
-}
-
-.login input {
-  padding: .9375rem 1.125rem;
-  height: auto;
-}
-
-.forgot-pw {
-  font-size: .875rem;
-}
-
-.btn-block {
-  /*remove the fixed inline height of 76px. we want a height of 48px.*/
-  height: 48px !important;
-  padding: 14px;
-  font-size: 12px;
-  letter-spacing: .10em;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-/*NAVBAR*/
-.navbar.show-bg {
-  background: transparent;
-}
-
-.navbar.rid-navbar .rid-sub-navbar {
-  background: #000;
-  font-size: 12px;
-  letter-spacing: .14em;
-  height: 36px;
-}
-
-.navbar.rid-navbar .rid-sub-navbar .navbar-nav {
-  flex-grow: 1000;
-  justify-content: space-between;
-  max-width: 1320px;
-}
-
-.navbar.rid-navbar .riddle-font-normal {
-  font-family: inherit;
-}
-
-.navbar-nav .nav-item {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.navbar-nav .nav-item:nth-child(1) {
-  order: 2;
-}
-
-.navbar-nav .nav-item:nth-child(2) {
-  order: 1;
-}
-
-.navbar-nav .nav-item:nth-child(3) {
-  order: 3;
-}
-
-.navbar.rid-navbar .rid-sub-navbar .navbar-nav .dropdown-menu {
-  right: auto !important;
-  left: 0 !important;
-}
-
-.navbar.rid-navbar .dropdown-item {
-  font-size: 12px;
-}
-
-.navbar.rid-navbar {
-  padding-top: 36px;
-  padding-bottom: 0;
-}
-
-.navbar.rid-navbar .btn.btn-cyan {
-  font-size: 12px;
-  letter-spacing: .14em;
-  font-weight: bold;
-}
-
-.navbar .navbar-toggler-icon {
+#col-sidebar .list-group .list-group-item {
   color: #272A31;
+  border-left: 4px solid transparent;
+  font-weight: bold;
+  line-height: 1.71em;
 }
 
-.login:after {
-  background: linear-gradient(90deg, #FFE9D9 10%, #DABDFE 45%, #BDF4FE 90%) !important;
-  border-radius: 1rem !important;
-  top: 0;
-  box-shadow: inset 0 -1rem 3rem 3rem #E6EDFB !important;
-  content: '' !important;
-  display: block !important;
-  height: 9rem !important;
-  left: -3rem !important;
-  opacity: 1 !important;
-  pointer-events: none !important;
-  position: absolute !important;
-  right: -3rem !important;
-  z-index: 1 !important;
+#col-sidebar .list-group .list-group-item.active {
+  color: #19d2f1;
 }
 
-.rid-nav-bg {
-  display: none !important;
+.card {
+  border-radius: .375rem;
+  color: #272A31;
+  box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125), 0 0 0 1px rgba(28,26,100,.125) !important;
 }
 
 /*footer*/
-.rid-footer {
-  background: #E6EDFB;
-}
-
-.rid-footer small,
-.rid-footer .row {
-  display: none;
-}
-
-.rid-footer .links {
-  background: transparent;
-}
-
-.rid-footer ul li {
-  padding: 0;
-}
-
-.rid-footer .list-inline {
+.text-center small p  {
   display: flex;
   font-size: 12px;
   letter-spacing: .14em;
   text-transform: uppercase;
   margin: 0;
   justify-content: center;
-}
-
-.rid-footer .list-inline a {
   display: block;
   font-size: 12px;
   letter-spacing: .14em;
   color: #272A31 !important;
   padding: 27px 12px;
-}
-.rid-footer .list-inline a:hover {
-  text-decoration: none;
-  opacity: .8;
-}
-.rid-footer .list-inline a:active {
-  text-decoration: none;
-  opacity: .5;
-}
-
-.rid-footer .p-5 {
-  padding: 0 !important;
 }
