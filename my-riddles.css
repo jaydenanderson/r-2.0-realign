@@ -214,6 +214,7 @@ h2, .h2 {
   min-height: 7.2rem;
   padding: 0 1.6rem !important;
   position:  relative !important;
+  box-shadow: 0 0 0 1px rgba(28,26,100,.125)  !important;
 }
 
 .main-navbar:after {

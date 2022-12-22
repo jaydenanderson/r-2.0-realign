@@ -1,5 +1,7 @@
 /*Log in page
+This will need their own specific stylesheet so they don't effect what else is in 1.0.
 
+- Importants here matter to beat out inline helper classes.
 - swap header logo to new homepage logo (see below)
 
 <svg width="164" height="32" viewBox="0 0 164 32" fill="none" xmlns="http://www.w3.org/2000/svg">

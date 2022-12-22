@@ -1,27 +1,8 @@
-/*Log in page
+/* ACCOUNT PAGES
+These will need their own specific stylesheet so they don't effect what else is in 1.0.
 
-- swap header logo to new homepage logo (see below)
-
-<svg width="164" height="32" viewBox="0 0 164 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1944_55)">
-<path d="M155.13 11.4286C150.34 11.4286 146.451 15.3333 146.451 20.1143C146.451 24.9143 150.34 28.8381 155.149 28.8381C156.126 28.8381 156.912 28.0571 156.912 27.0857C156.912 26.1143 156.126 25.3333 155.149 25.3333C152.295 25.3333 149.976 23.0095 149.976 20.1333C149.976 17.2762 152.295 14.9143 155.13 14.9143C157.372 14.9143 159.268 16.4 159.996 18.3047H155.188C154.211 18.3047 153.425 19.1428 153.425 20.1143C153.425 21.0857 154.211 21.9238 155.188 21.9238H162.066C163.043 21.9238 163.828 21.1428 163.828 20.1714C163.809 15.3333 159.92 11.4286 155.13 11.4286Z" fill="#31343D"/>
-<path d="M139.765 4.01904C138.788 4.01904 137.945 4.8 137.945 5.77142V27.0476C137.945 28.019 138.788 28.8 139.765 28.8C140.743 28.8 141.585 28.019 141.585 27.0476V5.77142C141.585 4.8 140.743 4.01904 139.765 4.01904Z" fill="#31343D"/>
-<path d="M129.898 4.01904C128.921 4.01904 128.174 4.8 128.174 5.77142V13.3333C126.641 12.1143 124.764 11.3905 122.695 11.3905C117.905 11.3905 114.016 15.2952 114.016 20.0952C114.016 24.8952 117.924 28.8 122.695 28.8C124.764 28.8 126.622 28.0762 128.155 26.8571V27.0476C128.155 28.019 128.902 28.8 129.879 28.8C130.856 28.8 131.603 28.019 131.603 27.0476V5.77142C131.623 4.8 130.875 4.01904 129.898 4.01904ZM122.695 25.2952C119.84 25.2952 117.522 22.9714 117.522 20.1143C117.522 17.2571 119.84 14.9333 122.695 14.9333C125.549 14.9333 127.867 17.2571 127.867 20.1143C127.848 22.9714 125.53 25.2952 122.695 25.2952Z" fill="#31343D"/>
-<path d="M107.482 4.01904C106.505 4.01904 105.758 4.8 105.758 5.77142V13.3333C104.225 12.1143 102.348 11.3905 100.279 11.3905C95.4889 11.3905 91.5996 15.2952 91.5996 20.0952C91.5996 24.8952 95.508 28.8 100.298 28.8C102.367 28.8 104.244 28.0762 105.777 26.8571V27.0476C105.777 28.019 106.524 28.8 107.501 28.8C108.479 28.8 109.226 28.019 109.226 27.0476V5.77142C109.207 4.8 108.459 4.01904 107.482 4.01904ZM100.259 25.2952C97.4047 25.2952 95.0865 22.9714 95.0865 20.1143C95.0865 17.2571 97.4047 14.9333 100.259 14.9333C103.114 14.9333 105.432 17.2571 105.432 20.1143C105.432 22.9714 103.114 25.2952 100.259 25.2952Z" fill="#31343D"/>
-<path d="M84.9705 11.3524C83.9934 11.3524 83.1504 12.1333 83.1504 13.1048V27.0476C83.1504 28.0191 83.9934 28.8 84.9705 28.8C85.9476 28.8 86.7906 28.0191 86.7906 27.0476V13.1048C86.7906 12.1524 85.9476 11.3524 84.9705 11.3524Z" fill="#31343D"/>
-<path d="M73.1112 20.6857C76.1575 19.3333 78.3032 16.3619 78.3032 12.8C78.3032 7.99999 74.414 4.17142 69.6243 4.17142H62.3631C61.386 4.17142 60.543 4.78094 60.543 5.75237V27.0857C60.543 28.0571 61.386 28.8381 62.3631 28.8381C63.3402 28.8381 64.1832 28.0571 64.1832 27.0857V7.42856H69.6243C72.479 7.42856 74.7972 9.80951 74.7972 12.6667C74.7972 15.5238 72.479 17.8857 69.6243 17.8857C68.9154 17.8857 68.2832 18.3238 67.9958 18.9905C67.7275 19.6571 67.8808 20.419 68.379 20.9143L75.6402 28.2095C75.985 28.5524 76.4257 28.7238 76.8855 28.7238C77.3261 28.7238 77.786 28.5524 78.1308 28.2095C78.8205 27.5238 78.8205 26.4 78.1308 25.7143L73.1112 20.6857Z" fill="#31343D"/>
-<path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" d="M47.5727 19.0095L39.8517 5.73334C38.8554 4.0381 36.6713 3.44762 34.947 4.4381L21.5741 12.0952C19.8498 13.0857 19.275 15.2571 20.2521 16.9524L27.9732 30.2095C28.9694 31.9048 31.1535 32.4952 32.8778 31.5048L46.2507 23.8476C47.975 22.8762 48.569 20.7048 47.5727 19.0095Z" fill="#8280F1"/>
-<path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M37.475 12.019L26.5544 1.21904C25.1558 -0.171441 22.8759 -0.171441 21.4773 1.21904L10.5568 12.019C9.15816 13.4095 9.15816 15.6571 10.5568 17.0476L21.4773 27.8476C22.8759 29.2381 25.1558 29.2381 26.5544 27.8476L37.475 17.0476C38.8736 15.6571 38.8736 13.4095 37.475 12.019Z" fill="#8280F1"/>
-<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M26.4975 12.0762L13.1246 4.43809C11.4003 3.46666 9.21623 4.03809 8.21997 5.73332L0.49894 18.9524C-0.497322 20.6476 0.0966032 22.819 1.8209 23.8095L15.1938 31.4476C16.9181 32.419 19.1022 31.8476 20.0985 30.1524L27.8195 16.9333C28.7966 15.219 28.2218 13.0476 26.4975 12.0762Z" fill="#8280F1"/>
-</g>
-<defs>
-<clipPath id="clip0_1944_55">
-<rect width="164" height="32" fill="white"/>
-</clipPath>
-</defs>
-</svg>
-
-- the rem values are based on 16 here instead of 12 like the homepage as changing it right now is probably an unneeded breaking change. the rem values used and the header and footer will have to be refactored because of this.*/
+- Importants here matter to beat out inline helper classes.
+*/
 
 @import url("https://use.typekit.net/iwz2cpm.css");
 
@@ -75,8 +56,9 @@ a, a:hover {
 }
 
 h1, .h1,
+h2, .h2,
 h3, .h3{
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: .05em;
 }
@@ -92,17 +74,107 @@ h3, .h3{
   line-height: 1.71em;
 }
 
+#col-sidebar .list-group .list-group-item:hover {
+  text-decoration: none;
+  opacity: .7;
+  color: #272A31;
+}
+
 #col-sidebar .list-group .list-group-item.active {
   color: #19d2f1;
 }
 
+/*GENERAL CARD*/
 .card {
+  padding: 0 !important;
+  border: none;
   border-radius: .375rem;
   color: #272A31;
   box-shadow: 0 1.2rem 1.2rem -.6rem rgba(28,26,100,.125), 0 0 0 1px rgba(28,26,100,.125) !important;
 }
 
-/*footer*/
+.card-body {
+  padding: 24px;
+}
+
+.card h5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.card .list-group-item p {
+  font-size: 12px;
+  letter-spacing: .05em;
+  opacity: .7;
+}
+
+.card .list-group-item p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.card label {
+  margin-bottom: 0 !important;
+}
+
+.card .control-label {
+  margin-bottom: .375rem !important;
+}
+
+.page-header {
+  margin-top: 12px;
+}
+
+.modal-footer .btn,
+.card .btn-primary,
+#col-main .btn-primary {
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+/*SUBSCRIPTIONS*/
+.card .text-muted {
+  letter-spacing: .05em;
+  font-size: 12px;
+  color: rgba(39,42,49,.5) !important;
+}
+.card .text-muted a {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.card h2 {
+  margin: .75rem 0 .75rem !important;
+}
+
+/* MANAGE DOMAINS */
+.mb-5 > p {
+  opacity: .7;
+}
+
+/* ACCESS TOKENS */
+.card .page-description {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card .btn-success {
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: 8px 12px;
+}
+
+.card .table thead th {
+  letter-spacing: .05em;
+  font-size: 12px;
+  color: rgba(39,42,49,.5);
+}
+
+/*FOOTER*/
 .text-center small p  {
   display: flex;
   font-size: 12px;
